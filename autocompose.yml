@@ -1,0 +1,328 @@
+version: "3.6"
+services:
+  clever_hellman:
+    command:
+      - "/bin/sh"
+      - "-c"
+      - "python ./setup.py install"
+    container_name: "clever_hellman"
+    environment:
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.3"
+      - "PYTHON_PIP_VERSION=22.3.1"
+      - "PYTHON_SETUPTOOLS_VERSION=65.5.1"
+      - "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py"
+      - "PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637"
+    hostname: "4c259b086fbb"
+    image: "sha256:5c0b2ba23b7835abf215bbd987fe7da35c5a1e2d2b415cdfb11ceb6ec65cd9ec"
+    ipc: "private"
+    labels:
+      org.opencontainers.image.source: "https://github.com/peter91peter91/docker-autocompose"
+    logging:
+      driver: "none"
+      options: {}
+    network_mode: "bridge"
+    working_dir: "/usr/src/app"
+  confident_proskuriakova:
+    command:
+      - "python3"
+    container_name: "confident_proskuriakova"
+    environment:
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.3"
+      - "PYTHON_PIP_VERSION=22.3.1"
+      - "PYTHON_SETUPTOOLS_VERSION=65.5.1"
+      - "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py"
+      - "PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637"
+    hostname: "2598dd889744"
+    image: "5c0b2ba23b78"
+    ipc: "private"
+    labels:
+      org.opencontainers.image.source: "https://github.com/peter91peter91/docker-autocompose"
+    logging:
+      driver: "json-file"
+      options: {}
+    network_mode: "bridge"
+    working_dir: "/usr/src/app"
+  crazy_northcutt:
+    command:
+      - "python3"
+    container_name: "crazy_northcutt"
+    environment:
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.3"
+      - "PYTHON_PIP_VERSION=22.3.1"
+      - "PYTHON_SETUPTOOLS_VERSION=65.5.1"
+      - "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py"
+      - "PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637"
+    hostname: "c9c9db0ee88c"
+    image: "5c0b2ba23b78"
+    ipc: "private"
+    labels:
+      org.opencontainers.image.source: "https://github.com/peter91peter91/docker-autocompose"
+    logging:
+      driver: "json-file"
+      options: {}
+    network_mode: "bridge"
+    tty: true
+    working_dir: "/usr/src/app"
+  exciting_rhodes:
+    command:
+      - "python3"
+    container_name: "exciting_rhodes"
+    environment:
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.3"
+      - "PYTHON_PIP_VERSION=22.3.1"
+      - "PYTHON_SETUPTOOLS_VERSION=65.5.1"
+      - "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py"
+      - "PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637"
+    hostname: "271435fcc9a8"
+    image: "5c0b2ba23b78"
+    ipc: "private"
+    labels:
+      org.opencontainers.image.source: "https://github.com/peter91peter91/docker-autocompose"
+    logging:
+      driver: "json-file"
+      options: {}
+    network_mode: "bridge"
+    working_dir: "/usr/src/app"
+  frosty_stonebraker:
+    command:
+      - "python3"
+    container_name: "frosty_stonebraker"
+    environment:
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.3"
+      - "PYTHON_PIP_VERSION=22.3.1"
+      - "PYTHON_SETUPTOOLS_VERSION=65.5.1"
+      - "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py"
+      - "PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637"
+    hostname: "32040a4aa2bc"
+    image: "5c0b2ba23b78"
+    ipc: "private"
+    labels:
+      org.opencontainers.image.source: "https://github.com/peter91peter91/docker-autocompose"
+    logging:
+      driver: "json-file"
+      options: {}
+    network_mode: "bridge"
+    working_dir: "/usr/src/app"
+  peaceful_noyce:
+    command:
+      - "/bin/sh"
+      - "-c"
+      - "python ./setup.py install"
+    container_name: "peaceful_noyce"
+    environment:
+      - "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=C.UTF-8"
+      - "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+      - "PYTHON_VERSION=3.11.3"
+      - "PYTHON_PIP_VERSION=22.3.1"
+      - "PYTHON_SETUPTOOLS_VERSION=65.5.1"
+      - "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d5cb0afaf23b8520f1bbcfed521017b4a95f5c01/public/get-pip.py"
+      - "PYTHON_GET_PIP_SHA256=394be00f13fa1b9aaa47e911bdb59a09c3b2986472130f30aa0bfaf7f3980637"
+    hostname: "c5b79e66b411"
+    image: "sha256:6154f433a8c7170d23c5cac15e529e09f67dbe93cc62cb5dbaf1283c191e53d5"
+    ipc: "private"
+    logging:
+      driver: "none"
+      options: {}
+    network_mode: "bridge"
+    working_dir: "/usr/src/app"
+  portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r:
+    container_name: "portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r"
+    entrypoint:
+      - "./agent"
+    environment:
+      - "AGENT_CLUSTER_ADDR=tasks.agent"
+      - "AGENT_PORT=9001"
+      - "PATH=/app:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    hostname: "6fe2d5b73be9"
+    image: "portainer/agent:latest@sha256:f763a45e6033b67b142d8dd8c5a4c450a514df2ea2bc6bffce8d671abd2341b8"
+    ipc: "private"
+    labels:
+      com.docker.stack.namespace: "portainer"
+      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
+      com.docker.swarm.service.id: "gwd2huglp63a6zakh0qwfvaaz"
+      com.docker.swarm.service.name: "portainer_agent"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "d44ilxm0s55sx81vyqcxz6k1r"
+      com.docker.swarm.task.name: "portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r"
+      io.portainer.agent: "true"
+    logging:
+      driver: "json-file"
+      options: {}
+    networks:
+      - "portainer_agent_network"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/var/lib/docker/volumes:/var/lib/docker/volumes"
+    working_dir: "/app"
+  portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv:
+    command:
+      - "-H"
+      - "tcp://tasks.agent:9001"
+      - "--tlsskipverify"
+    container_name: "portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv"
+    entrypoint:
+      - "/portainer"
+    environment:
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+    expose:
+      - "8000/tcp"
+      - "9000/tcp"
+      - "9443/tcp"
+    hostname: "ceeedc8cba0c"
+    image: "portainer/portainer:latest@sha256:47b064434edf437badf7337e516e07f64477485c8ecc663ddabbe824b20c672d"
+    ipc: "private"
+    labels:
+      com.docker.desktop.extension.api.version: ">= 0.2.2"
+      com.docker.desktop.extension.icon: "https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/logos/portainer.png"
+      com.docker.extension.additional-urls: "[{\"title\":\"Website\",\"url\":\"https://www.portainer.io?utm_campaign=DockerCon&utm_source=DockerDesktop\"\
+        },{\"title\":\"Documentation\",\"url\":\"https://docs.portainer.io\"},{\"\
+        title\":\"Support\",\"url\":\"https://join.slack.com/t/portainer/shared_invite/zt-txh3ljab-52QHTyjCqbe5RibC2lcjKA\"\
+        }]"
+      com.docker.extension.detailed-description: "<p data-renderer-start-pos=\"226\"\
+        >Portainer&rsquo;s Docker Desktop extension gives you access to all of Portainer&rsquo;s\
+        \ rich management functionality within your docker desktop experience.</p><h2\
+        \ data-renderer-start-pos=\"374\">With Portainer you can:</h2><ul><li>See\
+        \ all your running containers</li><li>Easily view all of your container logs</li><li>Console\
+        \ into containers</li><li>Easily deploy your code into containers using a\
+        \ simple form</li><li>Turn your YAML into custom templates for easy reuse</li></ul><h2\
+        \ data-renderer-start-pos=\"660\">About Portainer&nbsp;</h2><p data-renderer-start-pos=\"\
+        680\">Portainer is the worlds&rsquo; most popular universal container management\
+        \ platform with more than 650,000 active monthly users. Portainer can be used\
+        \ to manage Docker Standalone, Kubernetes, Docker Swarm and Nomad environments\
+        \ through a single common interface. It includes a simple GitOps automation\
+        \ engine and a Kube API.&nbsp;</p><p data-renderer-start-pos=\"1006\">Portainer\
+        \ Business Edition is our fully supported commercial grade product for business-wide\
+        \ use. It includes all the functionality that businesses need to manage containers\
+        \ at scale. Visit <a class=\"sc-jKJlTe dPfAtb\" href=\"http://portainer.io/\"\
+        \ title=\"http://Portainer.io\" data-renderer-mark=\"true\">Portainer.io</a>\
+        \ to learn more about Portainer Business and <a class=\"sc-jKJlTe dPfAtb\"\
+        \ href=\"http://portainer.io/take5?utm_campaign=DockerCon&amp;utm_source=Docker%20Desktop\"\
+        \ title=\"http://portainer.io/take5?utm_campaign=DockerCon&amp;utm_source=Docker%20Desktop\"\
+        \ data-renderer-mark=\"true\">get 5 free nodes.</a></p>"
+      com.docker.extension.publisher-url: "https://www.portainer.io"
+      com.docker.extension.screenshots: "[{\"alt\": \"screenshot one\", \"url\": \"\
+        https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-1.png\"\
+        },{\"alt\": \"screenshot two\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-2.png\"\
+        },{\"alt\": \"screenshot three\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-3.png\"\
+        },{\"alt\": \"screenshot four\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-4.png\"\
+        },{\"alt\": \"screenshot five\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-5.png\"\
+        },{\"alt\": \"screenshot six\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-6.png\"\
+        },{\"alt\": \"screenshot seven\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-7.png\"\
+        },{\"alt\": \"screenshot eight\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-8.png\"\
+        },{\"alt\": \"screenshot nine\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-9.png\"\
+        }]"
+      com.docker.stack.namespace: "portainer"
+      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
+      com.docker.swarm.service.id: "1tgixu0i1wsg5m5mp2wxtoce1"
+      com.docker.swarm.service.name: "portainer_portainer"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "06rx1zfkby0kcp65ocw0heycv"
+      com.docker.swarm.task.name: "portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv"
+      org.opencontainers.image.description: "Docker container management made simple,\
+        \ with the world’s most popular GUI-based container management platform."
+      org.opencontainers.image.title: "Portainer"
+      org.opencontainers.image.vendor: "Portainer.io"
+    logging:
+      driver: "json-file"
+      options: {}
+    networks:
+      - "portainer_agent_network"
+      - "ingress"
+    volumes:
+      - "portainer_portainer_data:/data"
+    working_dir: "/"
+  webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd:
+    command:
+      - "nginx"
+      - "-g"
+      - "daemon off;"
+    container_name: "webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd"
+    entrypoint:
+      - "/docker-entrypoint.sh"
+    environment:
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "NGINX_VERSION=1.23.4"
+      - "NJS_VERSION=0.7.11"
+      - "PKG_RELEASE=1~bullseye"
+    expose:
+      - "80/tcp"
+    hostname: "b28e96469c2d"
+    image: "nginx:latest@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94"
+    ipc: "private"
+    labels:
+      com.docker.stack.namespace: "webserver_test"
+      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
+      com.docker.swarm.service.id: "2glvo0b2p6n17w04da4p9lvcc"
+      com.docker.swarm.service.name: "webserver_test_webserver-worker"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "b0v84nn80wyhlns84fzfgubbd"
+      com.docker.swarm.task.name: "webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd"
+      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+    logging:
+      driver: "json-file"
+      options: {}
+    networks:
+      - "webserver_test_default"
+      - "ingress"
+  webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1:
+    command:
+      - "nginx"
+      - "-g"
+      - "daemon off;"
+    container_name: "webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1"
+    entrypoint:
+      - "/docker-entrypoint.sh"
+    environment:
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "NGINX_VERSION=1.23.4"
+      - "NJS_VERSION=0.7.11"
+      - "PKG_RELEASE=1~bullseye"
+    expose:
+      - "80/tcp"
+    hostname: "6a8c7d47aef0"
+    image: "nginx:latest@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94"
+    ipc: "private"
+    labels:
+      com.docker.stack.namespace: "webserver_test"
+      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
+      com.docker.swarm.service.id: "2glvo0b2p6n17w04da4p9lvcc"
+      com.docker.swarm.service.name: "webserver_test_webserver-worker"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "zpp7vl0e1jjstu5zzheise8q1"
+      com.docker.swarm.task.name: "webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1"
+      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+    logging:
+      driver: "json-file"
+      options: {}
+    networks:
+      - "webserver_test_default"
+      - "ingress"
+networks:
+  ingress:
+    external: true
+    name: "ingress"
+  portainer_agent_network:
+    external: true
+    name: "portainer_agent_network"
+  webserver_test_default:
+    external: true
+    name: "webserver_test_default"
+volumes:
+  portainer_portainer_data:
+    external: true
