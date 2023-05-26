@@ -3,6 +3,7 @@ import argparse
 import datetime
 import re
 import sys
+import numpy
 
 from collections import OrderedDict
 
@@ -13,7 +14,7 @@ IGNORE_VALUES = [None, "", [], "null", {}, "default", 0, ",", "no"]
 
 
 def list_container_names():
-    c = docker.from_env()
+    c = docker.from_env()  #
     return [container.name for container in c.containers.list(all=True)]
 
 
@@ -100,7 +101,8 @@ def main():
     volumes = {}
     containers = {}
 
-    for cname in container_names:
+    placement_constraints_moiseev("3243243432423")
+    for cname in container_names:  # здесь цикл заполнения yml-файла
         cfile, c_networks, c_volumes = generate(cname, createvolumes=args.createvolumes)
 
         struct.update(cfile)
@@ -139,6 +141,39 @@ def render(struct, args, networks, volumes):
         pyaml.p(OrderedDict(ans), string_val_style='"')
 
 
+##################################################################
+def placement_constraints_moiseev(container_name):   #лучше вызывать единожды
+    # (container_name здесь это c.containers.get(cid).name)
+    # Взяли короткое имя. Ищем его далее в массиве docker service ls (c.services.list())
+    short_container_name = container_name.partition('.')[0]  #отрезаем имя после точки и точку
+
+    c = docker.from_env()
+    services_id_list = c.services.list()   #список всех айди сервисов
+
+    i = 0
+    services_name_list = []
+    for sid in len(services_id_list):
+        services_name_list[i] = c.services.get(sid).name  # список всех имен этих сервисов
+        i = i + 1
+    services_id_and_name_list = [[services_id_list], [services_name_list]]
+    ########################################################################
+    print("----------выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]")
+    for i in range(len(services_id_and_name_list)):
+        for j in range(len(services_id_and_name_list[i])):
+            print(services_id_and_name_list[i][j], end=' ')
+        print()
+########################################################################
+
+    # у service вывод cname это:  chd7uh460n0t
+    #service_id = "1"
+    #sattrs = c.services.get(service_id).attrs  # берёт атрибуты сервиса cid-номер
+    placement_constraints  = "1"
+    return placement_constraints
+
+
+##################################################################
+
+
 def generate(cname, createvolumes=False):
     c = docker.from_env()
 
@@ -151,26 +186,31 @@ def generate(cname, createvolumes=False):
     cattrs = c.containers.get(cid).attrs
 
     # ----------------------------------------------------------------------------------------
-    print("------------------------------")
-    print("------------------------------")
-    print("вывод cattrs")  # !!! moiseev
-    print(cattrs)
-    print("------------------------------")
-    print("вывод services")  # !!! moiseev
-    print(c.containers.list())
-    print("------------------------------")
-    print("вывод services get(cid)")  # !!! moiseev
-    print(c.containers.get(cid))
-    print("------------------------------")
-    print("вывод cname")  # !!! moiseev
-    print(cname)
-    print("------------------------------")
-    print("вывод c.services.get(cid).name")  # !!! moiseev
-    print(c.containers.get(cid).name)
-    print("------------------------------")
-    print("------------------------------")
+    #    print("------------------------------")
+    #    print("------------------------------")
+    #    print("вывод cattrs")  # !!! moiseev
+    #    print(cattrs)
+    #    print("------------------------------")
+    #    print("вывод services")  # !!! moiseev
+    #    print(c.containers.list())
+    #    print("------------------------------")
+    #    print("вывод services get(cid)")  # !!! moiseev
+    #    print(c.containers.get(cid))
+    #    print("------------------------------")
+    #    print("вывод cname")  # !!! moiseev
+    #    print(cname)
+    #    print("------------------------------")
+    #    print("вывод c.services.get(cid).name")  # !!! moiseev
+    #    print(c.containers.get(cid).name)
+    #    print("------------------------------")
+    #    print("------------------------------")
     # ----------------------------------------------------------------------------------------
-
+    # добавляем считку  поля placement constraints - node.role == manager
+    print("------------------------------")
+    print(
+        "вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})")  # !!! moiseev
+    print(cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {}))
+    print("------------------------------")
 
     # Build yaml dict structure
 
@@ -192,8 +232,8 @@ def generate(cname, createvolumes=False):
         "image": cattrs.get("Config", {}).get("Image", None),
         "labels": cattrs.get("Config", {}).get("Labels", {}),
         "links": cattrs.get("HostConfig", {}).get("Links"),
-        #'log_driver': cattrs.get('HostConfig']['LogConfig']['Type'],
-        #'log_opt': cattrs.get('HostConfig']['LogConfig']['Config'],
+        # 'log_driver': cattrs.get('HostConfig']['LogConfig']['Type'],
+        # 'log_opt': cattrs.get('HostConfig']['LogConfig']['Config'],
         "logging": {
             "driver": cattrs.get("HostConfig", {}).get("LogConfig", {}).get("Type", None),
             "options": cattrs.get("HostConfig", {}).get("LogConfig", {}).get("Config", None),
@@ -315,3 +355,9 @@ def generate(cname, createvolumes=False):
 
 if __name__ == "__main__":
     main()
+
+    ###################################################
+# "constraints": {
+#     cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {})
+# },
+###################################################
