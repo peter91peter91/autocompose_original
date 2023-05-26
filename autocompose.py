@@ -3,7 +3,6 @@ import argparse
 import datetime
 import re
 import sys
-import numpy
 
 from collections import OrderedDict
 
@@ -102,6 +101,8 @@ def main():
     containers = {}
 
     placement_constraints_moiseev("3243243432423")
+
+
     for cname in container_names:  # здесь цикл заполнения yml-файла
         cfile, c_networks, c_volumes = generate(cname, createvolumes=args.createvolumes)
 
@@ -157,7 +158,7 @@ def placement_constraints_moiseev(container_name):   #лучше вызыват�
         i = i + 1
     services_id_and_name_list = [[services_id_list], [services_name_list]]
     ########################################################################
-    print("----------выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]")
+    print("---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- ")
     for i in range(len(services_id_and_name_list)):
         for j in range(len(services_id_and_name_list[i])):
             print(services_id_and_name_list[i][j], end=' ')
@@ -167,7 +168,7 @@ def placement_constraints_moiseev(container_name):   #лучше вызыват�
     # у service вывод cname это:  chd7uh460n0t
     #service_id = "1"
     #sattrs = c.services.get(service_id).attrs  # берёт атрибуты сервиса cid-номер
-    placement_constraints  = "1"
+    placement_constraints = "1"
     return placement_constraints
 
 
