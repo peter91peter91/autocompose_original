@@ -1,96 +1,959 @@
 ------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
 ------------------------------
-вывод cattrs
-{'Id': 'b28e96469c2d139d8b197e2b9301dd4fda155ed5dea6b2e2209117b53b0c7fbc', 'Created': '2023-05-16T10:27:40.976314937Z', 'Path': '/docker-entrypoint.sh', 'Args': ['nginx', '-g', 'daemon off;'], 'State': {'Status': 'running', 'Running': True, 'Paused': False, 'Restarting': False, 'OOMKilled': False, 'Dead': False, 'Pid': 1412, 'ExitCode': 0, 'Error': '', 'StartedAt': '2023-05-16T10:27:48.169642649Z', 'FinishedAt': '0001-01-01T00:00:00Z'}, 'Image': 'sha256:6efc10a0510f143a90b69dc564a914574973223e88418d65c1f8809e08dc0a1f', 'ResolvConfPath': '/var/lib/docker/containers/b28e96469c2d139d8b197e2b9301dd4fda155ed5dea6b2e2209117b53b0c7fbc/resolv.conf', 'HostnamePath': '/var/lib/docker/containers/b28e96469c2d139d8b197e2b9301dd4fda155ed5dea6b2e2209117b53b0c7fbc/hostname', 'HostsPath': '/var/lib/docker/containers/b28e96469c2d139d8b197e2b9301dd4fda155ed5dea6b2e2209117b53b0c7fbc/hosts', 'LogPath': '/var/lib/docker/containers/b28e96469c2d139d8b197e2b9301dd4fda155ed5dea6b2e2209117b53b0c7fbc/b28e96469c2d139d8b197e2b9301dd4fda155ed5dea6b2e2209117b53b0c7fbc-json.log', 'Name': '/webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd', 'RestartCount': 0, 'Driver': 'overlay2', 'Platform': 'linux', 'MountLabel': '', 'ProcessLabel': '', 'AppArmorProfile': 'docker-default', 'ExecIDs': None, 'HostConfig': {'Binds': None, 'ContainerIDFile': '', 'LogConfig': {'Type': 'json-file', 'Config': {}}, 'NetworkMode': 'default', 'PortBindings': {}, 'RestartPolicy': {'Name': '', 'MaximumRetryCount': 0}, 'AutoRemove': False, 'VolumeDriver': '', 'VolumesFrom': None, 'CapAdd': None, 'CapDrop': None, 'CgroupnsMode': 'private', 'Dns': None, 'DnsOptions': None, 'DnsSearch': None, 'ExtraHosts': None, 'GroupAdd': None, 'IpcMode': 'private', 'Cgroup': '', 'Links': None, 'OomScoreAdj': 0, 'PidMode': '', 'Privileged': False, 'PublishAllPorts': False, 'ReadonlyRootfs': False, 'SecurityOpt': None, 'UTSMode': '', 'UsernsMode': '', 'ShmSize': 67108864, 'Runtime': 'runc', 'ConsoleSize': [0, 0], 'Isolation': 'default', 'CpuShares': 0, 'Memory': 0, 'NanoCpus': 0, 'CgroupParent': '', 'BlkioWeight': 0, 'BlkioWeightDevice': None, 'BlkioDeviceReadBps': None, 'BlkioDeviceWriteBps': None, 'BlkioDeviceReadIOps': None, 'BlkioDeviceWriteIOps': None, 'CpuPeriod': 0, 'CpuQuota': 0, 'CpuRealtimePeriod': 0, 'CpuRealtimeRuntime': 0, 'CpusetCpus': '', 'CpusetMems': '', 'Devices': None, 'DeviceCgroupRules': None, 'DeviceRequests': None, 'KernelMemory': 0, 'KernelMemoryTCP': 0, 'MemoryReservation': 0, 'MemorySwap': 0, 'MemorySwappiness': None, 'OomKillDisable': None, 'PidsLimit': None, 'Ulimits': [], 'CpuCount': 0, 'CpuPercent': 0, 'IOMaximumIOps': 0, 'IOMaximumBandwidth': 0, 'MaskedPaths': ['/proc/asound', '/proc/acpi', '/proc/kcore', '/proc/keys', '/proc/latency_stats', '/proc/timer_list', '/proc/timer_stats', '/proc/sched_debug', '/proc/scsi', '/sys/firmware'], 'ReadonlyPaths': ['/proc/bus', '/proc/fs', '/proc/irq', '/proc/sys', '/proc/sysrq-trigger']}, 'GraphDriver': {'Data': {'LowerDir': '/var/lib/docker/overlay2/577ddda5cce2257d46f059b83b536e427fea49f7bd9ad94081eb20c9b82b08f0-init/diff:/var/lib/docker/overlay2/06205052ff87a12004496b12f6f1b67c7774ee6e1cf3a460284e183f7ada477c/diff:/var/lib/docker/overlay2/325b13ee9b8c3ce91d291e8bddfa0fca964945ce95c5be4c18bfbca46bfcd4c6/diff:/var/lib/docker/overlay2/3fd0e8a1ce2f307fef398dfe64a043ee0768a46e883819309b40eb21861d0488/diff:/var/lib/docker/overlay2/054608e6854f9134c603fb45b9062376beac356ac0d538aa625a77a0a1da2b65/diff:/var/lib/docker/overlay2/ff6c1bd54f7dc32d27fb006cf3844ec04a04457e2ee35daf8a6c183ba1e3d669/diff:/var/lib/docker/overlay2/ee6a5e5c894ea61baeb380ad129a3dfd0e77e5ae074b200df4fc15d5146a0914/diff', 'MergedDir': '/var/lib/docker/overlay2/577ddda5cce2257d46f059b83b536e427fea49f7bd9ad94081eb20c9b82b08f0/merged', 'UpperDir': '/var/lib/docker/overlay2/577ddda5cce2257d46f059b83b536e427fea49f7bd9ad94081eb20c9b82b08f0/diff', 'WorkDir': '/var/lib/docker/overlay2/577ddda5cce2257d46f059b83b536e427fea49f7bd9ad94081eb20c9b82b08f0/work'}, 'Name': 'overlay2'}, 'Mounts': [], 'Config': {'Hostname': 'b28e96469c2d', 'Domainname': '', 'User': '', 'AttachStdin': False, 'AttachStdout': False, 'AttachStderr': False, 'ExposedPorts': {'80/tcp': {}}, 'Tty': False, 'OpenStdin': False, 'StdinOnce': False, 'Env': ['PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NGINX_VERSION=1.23.4', 'NJS_VERSION=0.7.11', 'PKG_RELEASE=1~bullseye'], 'Cmd': ['nginx', '-g', 'daemon off;'], 'Image': 'nginx:latest@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94', 'Volumes': None, 'WorkingDir': '', 'Entrypoint': ['/docker-entrypoint.sh'], 'OnBuild': None, 'Labels': {'com.docker.stack.namespace': 'webserver_test', 'com.docker.swarm.node.id': 'yav5a6wcscpq4jglmmecj5n4x', 'com.docker.swarm.service.id': '2glvo0b2p6n17w04da4p9lvcc', 'com.docker.swarm.service.name': 'webserver_test_webserver-worker', 'com.docker.swarm.task': '', 'com.docker.swarm.task.id': 'b0v84nn80wyhlns84fzfgubbd', 'com.docker.swarm.task.name': 'webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd', 'maintainer': 'NGINX Docker Maintainers <docker-maint@nginx.com>'}, 'StopSignal': 'SIGQUIT'}, 'NetworkSettings': {'Bridge': '', 'SandboxID': '49c2dbc24e2d0f72e4cdcfa55a9f9339fc2e7d17272eeaf0cd33dc1d7893da52', 'HairpinMode': False, 'LinkLocalIPv6Address': '', 'LinkLocalIPv6PrefixLen': 0, 'Ports': {'80/tcp': None}, 'SandboxKey': '/var/run/docker/netns/49c2dbc24e2d', 'SecondaryIPAddresses': None, 'SecondaryIPv6Addresses': None, 'EndpointID': '', 'Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'IPAddress': '', 'IPPrefixLen': 0, 'IPv6Gateway': '', 'MacAddress': '', 'Networks': {'ingress': {'IPAMConfig': {'IPv4Address': '10.0.0.7'}, 'Links': None, 'Aliases': ['b28e96469c2d'], 'NetworkID': '3w1xdwgpa5shg16223ftwo1pp', 'EndpointID': 'dbe9abb17d099986b3a8c28fc1b28897c1297b98cdfa21f815c94ac6e0189424', 'Gateway': '', 'IPAddress': '10.0.0.7', 'IPPrefixLen': 24, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '02:42:0a:00:00:07', 'DriverOpts': None}, 'webserver_test_default': {'IPAMConfig': {'IPv4Address': '10.0.2.6'}, 'Links': None, 'Aliases': ['b28e96469c2d'], 'NetworkID': 'dj7n8i732645g4zfrzffsnssh', 'EndpointID': 'f8611c20d9f54ae804e048d120d432e846f07097b08d456542dc4ede54708e9b', 'Gateway': '', 'IPAddress': '10.0.2.6', 'IPPrefixLen': 24, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '02:42:0a:00:02:06', 'DriverOpts': None}}}}
+---------- передали в мою функцию container_name
+rpn-backend-develop_frontend.1.7ay5tjyff548bzhkp4vwsud24
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_frontend
+---------- выводим в теле цикла target_service_id
+g7dyuu2lghd9
+---------- выводим вне цикла target_service_id
+g7dyuu2lghd9
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
 ------------------------------
-вывод services
-[<Container: b28e96469c>, <Container: 6fe2d5b73b>, <Container: ceeedc8cba>]
-------------------------------
-вывод services get(cid)
-<Container: b28e96469c>
-------------------------------
-вывод cname
-b28e96469c2d
-------------------------------
-вывод c.services.get(cid).name
-webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd
-------------------------------
-------------------------------
-------------------------------
-------------------------------
-вывод cattrs
-{'Id': '6fe2d5b73be979332548e8656205deb1fd1a670c3881c681370d3e9911bbc996', 'Created': '2023-05-16T10:27:40.879446225Z', 'Path': './agent', 'Args': [], 'State': {'Status': 'running', 'Running': True, 'Paused': False, 'Restarting': False, 'OOMKilled': False, 'Dead': False, 'Pid': 1414, 'ExitCode': 0, 'Error': '', 'StartedAt': '2023-05-16T10:27:47.902233551Z', 'FinishedAt': '0001-01-01T00:00:00Z'}, 'Image': 'sha256:3385c62c5b1ba57ee51646da1971a2508e9e93451a69c499834f7ab2a9001c72', 'ResolvConfPath': '/var/lib/docker/containers/6fe2d5b73be979332548e8656205deb1fd1a670c3881c681370d3e9911bbc996/resolv.conf', 'HostnamePath': '/var/lib/docker/containers/6fe2d5b73be979332548e8656205deb1fd1a670c3881c681370d3e9911bbc996/hostname', 'HostsPath': '/var/lib/docker/containers/6fe2d5b73be979332548e8656205deb1fd1a670c3881c681370d3e9911bbc996/hosts', 'LogPath': '/var/lib/docker/containers/6fe2d5b73be979332548e8656205deb1fd1a670c3881c681370d3e9911bbc996/6fe2d5b73be979332548e8656205deb1fd1a670c3881c681370d3e9911bbc996-json.log', 'Name': '/portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r', 'RestartCount': 0, 'Driver': 'overlay2', 'Platform': 'linux', 'MountLabel': '', 'ProcessLabel': '', 'AppArmorProfile': 'docker-default', 'ExecIDs': None, 'HostConfig': {'Binds': None, 'ContainerIDFile': '', 'LogConfig': {'Type': 'json-file', 'Config': {}}, 'NetworkMode': 'default', 'PortBindings': {}, 'RestartPolicy': {'Name': '', 'MaximumRetryCount': 0}, 'AutoRemove': False, 'VolumeDriver': '', 'VolumesFrom': None, 'CapAdd': None, 'CapDrop': None, 'CgroupnsMode': 'private', 'Dns': None, 'DnsOptions': None, 'DnsSearch': None, 'ExtraHosts': None, 'GroupAdd': None, 'IpcMode': 'private', 'Cgroup': '', 'Links': None, 'OomScoreAdj': 0, 'PidMode': '', 'Privileged': False, 'PublishAllPorts': False, 'ReadonlyRootfs': False, 'SecurityOpt': None, 'UTSMode': '', 'UsernsMode': '', 'ShmSize': 67108864, 'Runtime': 'runc', 'ConsoleSize': [0, 0], 'Isolation': 'default', 'CpuShares': 0, 'Memory': 0, 'NanoCpus': 0, 'CgroupParent': '', 'BlkioWeight': 0, 'BlkioWeightDevice': None, 'BlkioDeviceReadBps': None, 'BlkioDeviceWriteBps': None, 'BlkioDeviceReadIOps': None, 'BlkioDeviceWriteIOps': None, 'CpuPeriod': 0, 'CpuQuota': 0, 'CpuRealtimePeriod': 0, 'CpuRealtimeRuntime': 0, 'CpusetCpus': '', 'CpusetMems': '', 'Devices': None, 'DeviceCgroupRules': None, 'DeviceRequests': None, 'KernelMemory': 0, 'KernelMemoryTCP': 0, 'MemoryReservation': 0, 'MemorySwap': 0, 'MemorySwappiness': None, 'OomKillDisable': None, 'PidsLimit': None, 'Ulimits': [], 'CpuCount': 0, 'CpuPercent': 0, 'IOMaximumIOps': 0, 'IOMaximumBandwidth': 0, 'Mounts': [{'Type': 'bind', 'Source': '/var/run/docker.sock', 'Target': '/var/run/docker.sock'}, {'Type': 'bind', 'Source': '/var/lib/docker/volumes', 'Target': '/var/lib/docker/volumes'}], 'MaskedPaths': ['/proc/asound', '/proc/acpi', '/proc/kcore', '/proc/keys', '/proc/latency_stats', '/proc/timer_list', '/proc/timer_stats', '/proc/sched_debug', '/proc/scsi', '/sys/firmware'], 'ReadonlyPaths': ['/proc/bus', '/proc/fs', '/proc/irq', '/proc/sys', '/proc/sysrq-trigger']}, 'GraphDriver': {'Data': {'LowerDir': '/var/lib/docker/overlay2/efe0c428fa9165b43ec865ae28f872624bfbd1565aebdf766cb70d2c9b9a45e4-init/diff:/var/lib/docker/overlay2/a17c25525be0e8f0b0aecda8b5157c1dac2c9b444300899ae69ca9f982c94e6a/diff:/var/lib/docker/overlay2/9bf37eccf6f32d712fd864db7e501518f53216b0c9633639e20e949d8ebdd054/diff:/var/lib/docker/overlay2/1d5c6a520af47af546485accabeb66c2621ac971bee65f7f331998589a709e7a/diff:/var/lib/docker/overlay2/3b38b46fc9ebfac6c0b7fc83db20940941838827af3d5462abe55f54783dbf26/diff:/var/lib/docker/overlay2/f2e830008de16351b4ca2af86895d00d3cc677537e3ec604422ac78983dbbfd1/diff:/var/lib/docker/overlay2/8e93fc0cd8aa35d0580b72510e94298d62ea846814653d0fe2c6e190b894c2cc/diff', 'MergedDir': '/var/lib/docker/overlay2/efe0c428fa9165b43ec865ae28f872624bfbd1565aebdf766cb70d2c9b9a45e4/merged', 'UpperDir': '/var/lib/docker/overlay2/efe0c428fa9165b43ec865ae28f872624bfbd1565aebdf766cb70d2c9b9a45e4/diff', 'WorkDir': '/var/lib/docker/overlay2/efe0c428fa9165b43ec865ae28f872624bfbd1565aebdf766cb70d2c9b9a45e4/work'}, 'Name': 'overlay2'}, 'Mounts': [{'Type': 'bind', 'Source': '/var/lib/docker/volumes', 'Destination': '/var/lib/docker/volumes', 'Mode': '', 'RW': True, 'Propagation': 'rslave'}, {'Type': 'bind', 'Source': '/var/run/docker.sock', 'Destination': '/var/run/docker.sock', 'Mode': '', 'RW': True, 'Propagation': 'rprivate'}], 'Config': {'Hostname': '6fe2d5b73be9', 'Domainname': '', 'User': '', 'AttachStdin': False, 'AttachStdout': False, 'AttachStderr': False, 'Tty': False, 'OpenStdin': False, 'StdinOnce': False, 'Env': ['AGENT_CLUSTER_ADDR=tasks.agent', 'AGENT_PORT=9001', 'PATH=/app:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'], 'Cmd': None, 'Image': 'portainer/agent:latest@sha256:f763a45e6033b67b142d8dd8c5a4c450a514df2ea2bc6bffce8d671abd2341b8', 'Volumes': None, 'WorkingDir': '/app', 'Entrypoint': ['./agent'], 'OnBuild': None, 'Labels': {'com.docker.stack.namespace': 'portainer', 'com.docker.swarm.node.id': 'yav5a6wcscpq4jglmmecj5n4x', 'com.docker.swarm.service.id': 'gwd2huglp63a6zakh0qwfvaaz', 'com.docker.swarm.service.name': 'portainer_agent', 'com.docker.swarm.task': '', 'com.docker.swarm.task.id': 'd44ilxm0s55sx81vyqcxz6k1r', 'com.docker.swarm.task.name': 'portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r', 'io.portainer.agent': 'true'}}, 'NetworkSettings': {'Bridge': '', 'SandboxID': 'c3ca5c78fed4e33b44dd0a9e1499198188c579bacbc8f5749cbb0bc5f776baa8', 'HairpinMode': False, 'LinkLocalIPv6Address': '', 'LinkLocalIPv6PrefixLen': 0, 'Ports': {}, 'SandboxKey': '/var/run/docker/netns/c3ca5c78fed4', 'SecondaryIPAddresses': None, 'SecondaryIPv6Addresses': None, 'EndpointID': '', 'Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'IPAddress': '', 'IPPrefixLen': 0, 'IPv6Gateway': '', 'MacAddress': '', 'Networks': {'portainer_agent_network': {'IPAMConfig': {'IPv4Address': '10.0.1.7'}, 'Links': None, 'Aliases': ['6fe2d5b73be9'], 'NetworkID': 'p007uuc47pth0x9ipcro1m1l4', 'EndpointID': '6d10ccc40a60b5dc04553c06883c012223371e5a7540f7d074e71ae711e554df', 'Gateway': '', 'IPAddress': '10.0.1.7', 'IPPrefixLen': 24, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '02:42:0a:00:01:07', 'DriverOpts': None}}}}
-------------------------------
-вывод services
-[<Container: b28e96469c>, <Container: 6fe2d5b73b>, <Container: ceeedc8cba>]
-------------------------------
-вывод services get(cid)
-<Container: 6fe2d5b73b>
-------------------------------
-вывод cname
-6fe2d5b73be9
-------------------------------
-вывод c.services.get(cid).name
-portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r
-------------------------------
-------------------------------
-------------------------------
-------------------------------
-вывод cattrs
-{'Id': 'ceeedc8cba0c16665d9562b59fb5ba9441edffac18f4d7bdb57d05a9f2fa502f', 'Created': '2023-05-16T10:27:40.879010033Z', 'Path': '/portainer', 'Args': ['-H', 'tcp://tasks.agent:9001', '--tlsskipverify'], 'State': {'Status': 'running', 'Running': True, 'Paused': False, 'Restarting': False, 'OOMKilled': False, 'Dead': False, 'Pid': 1419, 'ExitCode': 0, 'Error': '', 'StartedAt': '2023-05-16T10:27:48.192720474Z', 'FinishedAt': '0001-01-01T00:00:00Z'}, 'Image': 'sha256:5f11582196a42b895cdb9322f7a650f42a0c1ed062efc71864352f314228a187', 'ResolvConfPath': '/var/lib/docker/containers/ceeedc8cba0c16665d9562b59fb5ba9441edffac18f4d7bdb57d05a9f2fa502f/resolv.conf', 'HostnamePath': '/var/lib/docker/containers/ceeedc8cba0c16665d9562b59fb5ba9441edffac18f4d7bdb57d05a9f2fa502f/hostname', 'HostsPath': '/var/lib/docker/containers/ceeedc8cba0c16665d9562b59fb5ba9441edffac18f4d7bdb57d05a9f2fa502f/hosts', 'LogPath': '/var/lib/docker/containers/ceeedc8cba0c16665d9562b59fb5ba9441edffac18f4d7bdb57d05a9f2fa502f/ceeedc8cba0c16665d9562b59fb5ba9441edffac18f4d7bdb57d05a9f2fa502f-json.log', 'Name': '/portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv', 'RestartCount': 0, 'Driver': 'overlay2', 'Platform': 'linux', 'MountLabel': '', 'ProcessLabel': '', 'AppArmorProfile': 'docker-default', 'ExecIDs': None, 'HostConfig': {'Binds': None, 'ContainerIDFile': '', 'LogConfig': {'Type': 'json-file', 'Config': {}}, 'NetworkMode': 'default', 'PortBindings': {}, 'RestartPolicy': {'Name': '', 'MaximumRetryCount': 0}, 'AutoRemove': False, 'VolumeDriver': '', 'VolumesFrom': None, 'CapAdd': None, 'CapDrop': None, 'CgroupnsMode': 'private', 'Dns': None, 'DnsOptions': None, 'DnsSearch': None, 'ExtraHosts': None, 'GroupAdd': None, 'IpcMode': 'private', 'Cgroup': '', 'Links': None, 'OomScoreAdj': 0, 'PidMode': '', 'Privileged': False, 'PublishAllPorts': False, 'ReadonlyRootfs': False, 'SecurityOpt': None, 'UTSMode': '', 'UsernsMode': '', 'ShmSize': 67108864, 'Runtime': 'runc', 'ConsoleSize': [0, 0], 'Isolation': 'default', 'CpuShares': 0, 'Memory': 0, 'NanoCpus': 0, 'CgroupParent': '', 'BlkioWeight': 0, 'BlkioWeightDevice': None, 'BlkioDeviceReadBps': None, 'BlkioDeviceWriteBps': None, 'BlkioDeviceReadIOps': None, 'BlkioDeviceWriteIOps': None, 'CpuPeriod': 0, 'CpuQuota': 0, 'CpuRealtimePeriod': 0, 'CpuRealtimeRuntime': 0, 'CpusetCpus': '', 'CpusetMems': '', 'Devices': None, 'DeviceCgroupRules': None, 'DeviceRequests': None, 'KernelMemory': 0, 'KernelMemoryTCP': 0, 'MemoryReservation': 0, 'MemorySwap': 0, 'MemorySwappiness': None, 'OomKillDisable': None, 'PidsLimit': None, 'Ulimits': [], 'CpuCount': 0, 'CpuPercent': 0, 'IOMaximumIOps': 0, 'IOMaximumBandwidth': 0, 'Mounts': [{'Type': 'volume', 'Source': 'portainer_portainer_data', 'Target': '/data', 'VolumeOptions': {'Labels': {'com.docker.stack.namespace': 'portainer'}}}], 'MaskedPaths': ['/proc/asound', '/proc/acpi', '/proc/kcore', '/proc/keys', '/proc/latency_stats', '/proc/timer_list', '/proc/timer_stats', '/proc/sched_debug', '/proc/scsi', '/sys/firmware'], 'ReadonlyPaths': ['/proc/bus', '/proc/fs', '/proc/irq', '/proc/sys', '/proc/sysrq-trigger']}, 'GraphDriver': {'Data': {'LowerDir': '/var/lib/docker/overlay2/3981183f7703ed22ee6bc2c67a86ec1bd19e1742391abbb0ee0b3baf979b3089-init/diff:/var/lib/docker/overlay2/5b922a5fdf4caba107f061179d72007fa5be2202b45181fd42ae674b8003e2d6/diff:/var/lib/docker/overlay2/f8c53f638c02309644804b6ff33076d06d5ca78b4d54fe165134b046cc6ab59d/diff:/var/lib/docker/overlay2/f2e830008de16351b4ca2af86895d00d3cc677537e3ec604422ac78983dbbfd1/diff:/var/lib/docker/overlay2/8e93fc0cd8aa35d0580b72510e94298d62ea846814653d0fe2c6e190b894c2cc/diff', 'MergedDir': '/var/lib/docker/overlay2/3981183f7703ed22ee6bc2c67a86ec1bd19e1742391abbb0ee0b3baf979b3089/merged', 'UpperDir': '/var/lib/docker/overlay2/3981183f7703ed22ee6bc2c67a86ec1bd19e1742391abbb0ee0b3baf979b3089/diff', 'WorkDir': '/var/lib/docker/overlay2/3981183f7703ed22ee6bc2c67a86ec1bd19e1742391abbb0ee0b3baf979b3089/work'}, 'Name': 'overlay2'}, 'Mounts': [{'Type': 'volume', 'Name': 'portainer_portainer_data', 'Source': '/var/lib/docker/volumes/portainer_portainer_data/_data', 'Destination': '/data', 'Driver': 'local', 'Mode': 'z', 'RW': True, 'Propagation': ''}], 'Config': {'Hostname': 'ceeedc8cba0c', 'Domainname': '', 'User': '', 'AttachStdin': False, 'AttachStdout': False, 'AttachStderr': False, 'ExposedPorts': {'8000/tcp': {}, '9000/tcp': {}, '9443/tcp': {}}, 'Tty': False, 'OpenStdin': False, 'StdinOnce': False, 'Env': ['PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'], 'Cmd': ['-H', 'tcp://tasks.agent:9001', '--tlsskipverify'], 'Image': 'portainer/portainer:latest@sha256:47b064434edf437badf7337e516e07f64477485c8ecc663ddabbe824b20c672d', 'Volumes': {'/data': {}}, 'WorkingDir': '/', 'Entrypoint': ['/portainer'], 'OnBuild': None, 'Labels': {'com.docker.desktop.extension.api.version': '>= 0.2.2', 'com.docker.desktop.extension.icon': 'https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/logos/portainer.png', 'com.docker.extension.additional-urls': '[{"title":"Website","url":"https://www.portainer.io?utm_campaign=DockerCon&utm_source=DockerDesktop"},{"title":"Documentation","url":"https://docs.portainer.io"},{"title":"Support","url":"https://join.slack.com/t/portainer/shared_invite/zt-txh3ljab-52QHTyjCqbe5RibC2lcjKA"}]', 'com.docker.extension.detailed-description': '<p data-renderer-start-pos="226">Portainer&rsquo;s Docker Desktop extension gives you access to all of Portainer&rsquo;s rich management functionality within your docker desktop experience.</p><h2 data-renderer-start-pos="374">With Portainer you can:</h2><ul><li>See all your running containers</li><li>Easily view all of your container logs</li><li>Console into containers</li><li>Easily deploy your code into containers using a simple form</li><li>Turn your YAML into custom templates for easy reuse</li></ul><h2 data-renderer-start-pos="660">About Portainer&nbsp;</h2><p data-renderer-start-pos="680">Portainer is the worlds&rsquo; most popular universal container management platform with more than 650,000 active monthly users. Portainer can be used to manage Docker Standalone, Kubernetes, Docker Swarm and Nomad environments through a single common interface. It includes a simple GitOps automation engine and a Kube API.&nbsp;</p><p data-renderer-start-pos="1006">Portainer Business Edition is our fully supported commercial grade product for business-wide use. It includes all the functionality that businesses need to manage containers at scale. Visit <a class="sc-jKJlTe dPfAtb" href="http://portainer.io/" title="http://Portainer.io" data-renderer-mark="true">Portainer.io</a> to learn more about Portainer Business and <a class="sc-jKJlTe dPfAtb" href="http://portainer.io/take5?utm_campaign=DockerCon&amp;utm_source=Docker%20Desktop" title="http://portainer.io/take5?utm_campaign=DockerCon&amp;utm_source=Docker%20Desktop" data-renderer-mark="true">get 5 free nodes.</a></p>', 'com.docker.extension.publisher-url': 'https://www.portainer.io', 'com.docker.extension.screenshots': '[{"alt": "screenshot one", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-1.png"},{"alt": "screenshot two", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-2.png"},{"alt": "screenshot three", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-3.png"},{"alt": "screenshot four", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-4.png"},{"alt": "screenshot five", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-5.png"},{"alt": "screenshot six", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-6.png"},{"alt": "screenshot seven", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-7.png"},{"alt": "screenshot eight", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-8.png"},{"alt": "screenshot nine", "url": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-9.png"}]', 'com.docker.stack.namespace': 'portainer', 'com.docker.swarm.node.id': 'yav5a6wcscpq4jglmmecj5n4x', 'com.docker.swarm.service.id': '1tgixu0i1wsg5m5mp2wxtoce1', 'com.docker.swarm.service.name': 'portainer_portainer', 'com.docker.swarm.task': '', 'com.docker.swarm.task.id': '06rx1zfkby0kcp65ocw0heycv', 'com.docker.swarm.task.name': 'portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv', 'org.opencontainers.image.description': 'Docker container management made simple, with the world’s most popular GUI-based container management platform.', 'org.opencontainers.image.title': 'Portainer', 'org.opencontainers.image.vendor': 'Portainer.io'}}, 'NetworkSettings': {'Bridge': '', 'SandboxID': '2e90c03df4a7b50777da93aeaec6faab7af925a71e3b0cab917eb5999b46ccaf', 'HairpinMode': False, 'LinkLocalIPv6Address': '', 'LinkLocalIPv6PrefixLen': 0, 'Ports': {'8000/tcp': None, '9000/tcp': None, '9443/tcp': None}, 'SandboxKey': '/var/run/docker/netns/2e90c03df4a7', 'SecondaryIPAddresses': None, 'SecondaryIPv6Addresses': None, 'EndpointID': '', 'Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'IPAddress': '', 'IPPrefixLen': 0, 'IPv6Gateway': '', 'MacAddress': '', 'Networks': {'ingress': {'IPAMConfig': {'IPv4Address': '10.0.0.9'}, 'Links': None, 'Aliases': ['ceeedc8cba0c'], 'NetworkID': '3w1xdwgpa5shg16223ftwo1pp', 'EndpointID': 'fc4ea62ac0f72e9e935f27400b907a30e0083dade166f5d1cfb9d6c3a972ed6b', 'Gateway': '', 'IPAddress': '10.0.0.9', 'IPPrefixLen': 24, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '02:42:0a:00:00:09', 'DriverOpts': None}, 'portainer_agent_network': {'IPAMConfig': {'IPv4Address': '10.0.1.8'}, 'Links': None, 'Aliases': ['ceeedc8cba0c'], 'NetworkID': 'p007uuc47pth0x9ipcro1m1l4', 'EndpointID': '66166e64cd4735a76906f6fd9a285ca8f061f904aae6bb418836d6549bd4e2d2', 'Gateway': '', 'IPAddress': '10.0.1.8', 'IPPrefixLen': 24, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '02:42:0a:00:01:08', 'DriverOpts': None}}}}
-------------------------------
-вывод services
-[<Container: b28e96469c>, <Container: 6fe2d5b73b>, <Container: ceeedc8cba>]
-------------------------------
-вывод services get(cid)
-<Container: ceeedc8cba>
-------------------------------
-вывод cname
-ceeedc8cba0c
-------------------------------
-вывод c.services.get(cid).name
-portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
 ------------------------------
 ------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+portainer_agent.iu2bnmvsg50ao1v4tidaygz0h.s8qedydfss3jdx9i8vm1h87dp
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   portainer_agent
+services_name_list[i]   portainer_agent
+---------- выводим в теле цикла target_service_id
+gdqj7fu3f66f
+---------- выводим вне цикла target_service_id
+gdqj7fu3f66f
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.platform.os == linux']
 ------------------------------
 ------------------------------
-вывод cattrs
-{'Id': '6a8c7d47aef01ac14dabd34782d341b7a0c91dfc350e15d23a39ec889f90819c', 'Created': '2023-05-12T13:03:17.705736587Z', 'Path': '/docker-entrypoint.sh', 'Args': ['nginx', '-g', 'daemon off;'], 'State': {'Status': 'exited', 'Running': False, 'Paused': False, 'Restarting': False, 'OOMKilled': False, 'Dead': False, 'Pid': 0, 'ExitCode': 0, 'Error': '', 'StartedAt': '2023-05-12T13:03:33.15868667Z', 'FinishedAt': '2023-05-12T14:54:44.325242106Z'}, 'Image': 'sha256:6efc10a0510f143a90b69dc564a914574973223e88418d65c1f8809e08dc0a1f', 'ResolvConfPath': '/var/lib/docker/containers/6a8c7d47aef01ac14dabd34782d341b7a0c91dfc350e15d23a39ec889f90819c/resolv.conf', 'HostnamePath': '/var/lib/docker/containers/6a8c7d47aef01ac14dabd34782d341b7a0c91dfc350e15d23a39ec889f90819c/hostname', 'HostsPath': '/var/lib/docker/containers/6a8c7d47aef01ac14dabd34782d341b7a0c91dfc350e15d23a39ec889f90819c/hosts', 'LogPath': '/var/lib/docker/containers/6a8c7d47aef01ac14dabd34782d341b7a0c91dfc350e15d23a39ec889f90819c/6a8c7d47aef01ac14dabd34782d341b7a0c91dfc350e15d23a39ec889f90819c-json.log', 'Name': '/webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1', 'RestartCount': 0, 'Driver': 'overlay2', 'Platform': 'linux', 'MountLabel': '', 'ProcessLabel': '', 'AppArmorProfile': 'docker-default', 'ExecIDs': None, 'HostConfig': {'Binds': None, 'ContainerIDFile': '', 'LogConfig': {'Type': 'json-file', 'Config': {}}, 'NetworkMode': 'default', 'PortBindings': {}, 'RestartPolicy': {'Name': '', 'MaximumRetryCount': 0}, 'AutoRemove': False, 'VolumeDriver': '', 'VolumesFrom': None, 'CapAdd': None, 'CapDrop': None, 'CgroupnsMode': 'private', 'Dns': [], 'DnsOptions': [], 'DnsSearch': [], 'ExtraHosts': None, 'GroupAdd': None, 'IpcMode': 'private', 'Cgroup': '', 'Links': None, 'OomScoreAdj': 0, 'PidMode': '', 'Privileged': False, 'PublishAllPorts': False, 'ReadonlyRootfs': False, 'SecurityOpt': None, 'UTSMode': '', 'UsernsMode': '', 'ShmSize': 67108864, 'Runtime': 'runc', 'ConsoleSize': [0, 0], 'Isolation': 'default', 'CpuShares': 0, 'Memory': 0, 'NanoCpus': 0, 'CgroupParent': '', 'BlkioWeight': 0, 'BlkioWeightDevice': None, 'BlkioDeviceReadBps': None, 'BlkioDeviceWriteBps': None, 'BlkioDeviceReadIOps': None, 'BlkioDeviceWriteIOps': None, 'CpuPeriod': 0, 'CpuQuota': 0, 'CpuRealtimePeriod': 0, 'CpuRealtimeRuntime': 0, 'CpusetCpus': '', 'CpusetMems': '', 'Devices': None, 'DeviceCgroupRules': None, 'DeviceRequests': None, 'KernelMemory': 0, 'KernelMemoryTCP': 0, 'MemoryReservation': 0, 'MemorySwap': 0, 'MemorySwappiness': None, 'OomKillDisable': None, 'PidsLimit': None, 'Ulimits': [], 'CpuCount': 0, 'CpuPercent': 0, 'IOMaximumIOps': 0, 'IOMaximumBandwidth': 0, 'MaskedPaths': ['/proc/asound', '/proc/acpi', '/proc/kcore', '/proc/keys', '/proc/latency_stats', '/proc/timer_list', '/proc/timer_stats', '/proc/sched_debug', '/proc/scsi', '/sys/firmware'], 'ReadonlyPaths': ['/proc/bus', '/proc/fs', '/proc/irq', '/proc/sys', '/proc/sysrq-trigger']}, 'GraphDriver': {'Data': {'LowerDir': '/var/lib/docker/overlay2/42921d2372aec3244f58fad23661da75e559e091f880af230f40e1d7293c20c9-init/diff:/var/lib/docker/overlay2/06205052ff87a12004496b12f6f1b67c7774ee6e1cf3a460284e183f7ada477c/diff:/var/lib/docker/overlay2/325b13ee9b8c3ce91d291e8bddfa0fca964945ce95c5be4c18bfbca46bfcd4c6/diff:/var/lib/docker/overlay2/3fd0e8a1ce2f307fef398dfe64a043ee0768a46e883819309b40eb21861d0488/diff:/var/lib/docker/overlay2/054608e6854f9134c603fb45b9062376beac356ac0d538aa625a77a0a1da2b65/diff:/var/lib/docker/overlay2/ff6c1bd54f7dc32d27fb006cf3844ec04a04457e2ee35daf8a6c183ba1e3d669/diff:/var/lib/docker/overlay2/ee6a5e5c894ea61baeb380ad129a3dfd0e77e5ae074b200df4fc15d5146a0914/diff', 'MergedDir': '/var/lib/docker/overlay2/42921d2372aec3244f58fad23661da75e559e091f880af230f40e1d7293c20c9/merged', 'UpperDir': '/var/lib/docker/overlay2/42921d2372aec3244f58fad23661da75e559e091f880af230f40e1d7293c20c9/diff', 'WorkDir': '/var/lib/docker/overlay2/42921d2372aec3244f58fad23661da75e559e091f880af230f40e1d7293c20c9/work'}, 'Name': 'overlay2'}, 'Mounts': [], 'Config': {'Hostname': '6a8c7d47aef0', 'Domainname': '', 'User': '', 'AttachStdin': False, 'AttachStdout': False, 'AttachStderr': False, 'ExposedPorts': {'80/tcp': {}}, 'Tty': False, 'OpenStdin': False, 'StdinOnce': False, 'Env': ['PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'NGINX_VERSION=1.23.4', 'NJS_VERSION=0.7.11', 'PKG_RELEASE=1~bullseye'], 'Cmd': ['nginx', '-g', 'daemon off;'], 'Image': 'nginx:latest@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94', 'Volumes': None, 'WorkingDir': '', 'Entrypoint': ['/docker-entrypoint.sh'], 'OnBuild': None, 'Labels': {'com.docker.stack.namespace': 'webserver_test', 'com.docker.swarm.node.id': 'yav5a6wcscpq4jglmmecj5n4x', 'com.docker.swarm.service.id': '2glvo0b2p6n17w04da4p9lvcc', 'com.docker.swarm.service.name': 'webserver_test_webserver-worker', 'com.docker.swarm.task': '', 'com.docker.swarm.task.id': 'zpp7vl0e1jjstu5zzheise8q1', 'com.docker.swarm.task.name': 'webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1', 'maintainer': 'NGINX Docker Maintainers <docker-maint@nginx.com>'}, 'StopSignal': 'SIGQUIT'}, 'NetworkSettings': {'Bridge': '', 'SandboxID': '427bc9ce3900f14e2f8dd46663f5f250257ff089b4b48bcddea21fa119fe9fe9', 'HairpinMode': False, 'LinkLocalIPv6Address': '', 'LinkLocalIPv6PrefixLen': 0, 'Ports': {}, 'SandboxKey': '/var/run/docker/netns/427bc9ce3900', 'SecondaryIPAddresses': None, 'SecondaryIPv6Addresses': None, 'EndpointID': '', 'Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'IPAddress': '', 'IPPrefixLen': 0, 'IPv6Gateway': '', 'MacAddress': '', 'Networks': {'ingress': {'IPAMConfig': {'IPv4Address': '10.0.0.9'}, 'Links': None, 'Aliases': ['6a8c7d47aef0'], 'NetworkID': '3w1xdwgpa5shg16223ftwo1pp', 'EndpointID': '', 'Gateway': '', 'IPAddress': '', 'IPPrefixLen': 0, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '', 'DriverOpts': None}, 'webserver_test_default': {'IPAMConfig': {'IPv4Address': '10.0.2.6'}, 'Links': None, 'Aliases': ['6a8c7d47aef0'], 'NetworkID': 'dj7n8i732645g4zfrzffsnssh', 'EndpointID': '', 'Gateway': '', 'IPAddress': '', 'IPPrefixLen': 0, 'IPv6Gateway': '', 'GlobalIPv6Address': '', 'GlobalIPv6PrefixLen': 0, 'MacAddress': '', 'DriverOpts': None}}}}
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
 ------------------------------
-вывод services
-[<Container: b28e96469c>, <Container: 6fe2d5b73b>, <Container: ceeedc8cba>]
+---------- передали в мою функцию container_name
+portainer_portainer.1.q2v0uhlp3bwim1s95it00dq5z
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   rpn-backend-develop_redis
+2)вошли в цикл
+3)short_container_name   portainer_portainer
+services_name_list[i]   portainer_portainer
+---------- выводим в теле цикла target_service_id
+n68a0jit3d37
+---------- выводим вне цикла target_service_id
+n68a0jit3d37
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
 ------------------------------
-вывод services get(cid)
-<Container: 6a8c7d47ae>
-------------------------------
-вывод cname
-6a8c7d47aef0
-------------------------------
-вывод c.services.get(cid).name
-webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
 ------------------------------
 ------------------------------
-version: "3.6"
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_backend-ro.1.ih7etorhze9id5f2014tb4pve
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_redis
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   portainer_portainer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend-ro
+services_name_list[i]   rpn-backend-develop_backend-ro
+---------- выводим в теле цикла target_service_id
+ozpvthj2u3d8
+---------- выводим вне цикла target_service_id
+ozpvthj2u3d8
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_frontend.1.g0885k0syhfqmu4dycne3s1qk
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_frontend
+services_name_list[i]   rpn-backend-develop_frontend
+---------- выводим в теле цикла target_service_id
+g7dyuu2lghd9
+---------- выводим вне цикла target_service_id
+g7dyuu2lghd9
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_postgres.1.ic8cpt122ufpad61ng0vn8dbw
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres
+services_name_list[i]   rpn-backend-develop_postgres
+---------- выводим в теле цикла target_service_id
+ik3ft08j6of2
+---------- выводим вне цикла target_service_id
+ik3ft08j6of2
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_monitoring-uonvos.1.fb66h7xqgko5sghzgi9mg654p
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_redis
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   portainer_portainer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_backend-ro
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_backend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_update
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_postgres-smev
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_monitoring-uonvos
+services_name_list[i]   rpn-backend-develop_monitoring-uonvos
+---------- выводим в теле цикла target_service_id
+vljuoo3o9ail
+---------- выводим вне цикла target_service_id
+vljuoo3o9ail
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_echo-server.1.c4d0gj0njirs0psunaxmndvkb
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_echo-server
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_echo-server
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_echo-server
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_echo-server
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_echo-server
+services_name_list[i]   rpn-backend-develop_echo-server
+---------- выводим в теле цикла target_service_id
+dlz7dkwe4rr2
+---------- выводим вне цикла target_service_id
+dlz7dkwe4rr2
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_redis.1.beul55us0a8lyh7zvmf89vvpq
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_redis
+services_name_list[i]   rpn-backend-develop_redis
+---------- выводим в теле цикла target_service_id
+mtwvqoh4ohft
+---------- выводим вне цикла target_service_id
+mtwvqoh4ohft
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_backend.1.87ftfhdcwxphj3chi3oht4uxl
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_redis
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   portainer_portainer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_backend-ro
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_backend
+services_name_list[i]   rpn-backend-develop_backend
+---------- выводим в теле цикла target_service_id
+pss9h1fhlru8
+---------- выводим вне цикла target_service_id
+pss9h1fhlru8
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_jobs.1.u7x141vsh3p13n3i7bbc905gk
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_jobs
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_jobs
+services_name_list[i]   rpn-backend-develop_jobs
+---------- выводим в теле цикла target_service_id
+ak4chsj52gnv
+---------- выводим вне цикла target_service_id
+ak4chsj52gnv
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_cron.1.zuduedn4y41s40tx1lpzgsrh4
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_cron
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_cron
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_cron
+services_name_list[i]   rpn-backend-develop_cron
+---------- выводим в теле цикла target_service_id
+chd7uh460n0t
+---------- выводим вне цикла target_service_id
+chd7uh460n0t
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_postgres-smev.1.snkfi5s2a8kmr1p5849x6yafp
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_redis
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   portainer_portainer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_backend-ro
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_backend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_update
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_postgres-smev
+services_name_list[i]   rpn-backend-develop_postgres-smev
+---------- выводим в теле цикла target_service_id
+uazvst7mucga
+---------- выводим вне цикла target_service_id
+uazvst7mucga
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_clickhouse.1.dzmuufrxp6to0ycv1rbo78bh3
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_clickhouse
+services_name_list[i]   rpn-backend-develop_clickhouse
+---------- выводим в теле цикла target_service_id
+h8j8ue4mmc92
+---------- выводим вне цикла target_service_id
+h8j8ue4mmc92
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_document-converter.1.3xdw9l5a1yzlwm25a8v2vg3zm
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_document-converter
+services_name_list[i]   rpn-backend-develop_document-converter
+---------- выводим в теле цикла target_service_id
+maf723o8fgpb
+---------- выводим вне цикла target_service_id
+maf723o8fgpb
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_mongo.1.9ft3u6i79xzozokpht3dl9c68
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_mongo
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_mongo
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_mongo
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_mongo
+services_name_list[i]   rpn-backend-develop_mongo
+---------- выводим в теле цикла target_service_id
+d4m9zq6edhmn
+---------- выводим вне цикла target_service_id
+d4m9zq6edhmn
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_pgbouncer.1.jbc1cujwu9vndrggrka1ih1ht
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_pgbouncer
+services_name_list[i]   rpn-backend-develop_pgbouncer
+---------- выводим в теле цикла target_service_id
+hjktgu18wy6g
+---------- выводим вне цикла target_service_id
+hjktgu18wy6g
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_gost_crypto.1.zmbuf2gsroav9qzcqylk35oz1
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_smtp
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_jobs
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_cron
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_mongo
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_echo-server
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_frontend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   portainer_agent
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_clickhouse
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_pgbouncer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_postgres
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_document-converter
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_redis
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   portainer_portainer
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_backend-ro
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_backend
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_update
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_postgres-smev
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_monitoring-uonvos
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_gost_crypto
+services_name_list[i]   rpn-backend-develop_gost_crypto
+---------- выводим в теле цикла target_service_id
+vy5yt5xqs2bn
+---------- выводим вне цикла target_service_id
+vy5yt5xqs2bn
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+{}
+------------------------------
+---------- передали в мою функцию container_name
+rpn-backend-develop_smtp.1.4jqnmnw0hzmao09how12dxp2r
+---------- выводим services_id_list
+[<Service: 0lt5gop7c9x9>, <Service: ak4chsj52gnv>, <Service: chd7uh460n0t>, <Service: d4m9zq6edhmn>, <Service: dlz7dkwe4rr2>, <Service: g7dyuu2lghd9>, <Service: gdqj7fu3f66f>, <Service: h8j8ue4mmc92>, <Service: hjktgu18wy6g>, <Service: ik3ft08j6of2>, <Service: maf723o8fgpb>, <Service: mtwvqoh4ohft>, <Service: n68a0jit3d37>, <Service: ozpvthj2u3d8>, <Service: pss9h1fhlru8>, <Service: si4ri3yu78lw>, <Service: uazvst7mucga>, <Service: vljuoo3o9ail>, <Service: vy5yt5xqs2bn>]
+1)перед циклом
+2)вошли в цикл
+3)short_container_name   rpn-backend-develop_smtp
+services_name_list[i]   rpn-backend-develop_smtp
+---------- выводим в теле цикла target_service_id
+0lt5gop7c9x9
+---------- выводим вне цикла target_service_id
+0lt5gop7c9x9
+---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- 
+['0lt5gop7c9x9', 'ak4chsj52gnv', 'chd7uh460n0t', 'd4m9zq6edhmn', 'dlz7dkwe4rr2', 'g7dyuu2lghd9', 'gdqj7fu3f66f', 'h8j8ue4mmc92', 'hjktgu18wy6g', 'ik3ft08j6of2', 'maf723o8fgpb', 'mtwvqoh4ohft', 'n68a0jit3d37', 'ozpvthj2u3d8', 'pss9h1fhlru8', 'si4ri3yu78lw', 'uazvst7mucga', 'vljuoo3o9ail', 'vy5yt5xqs2bn'] 
+['rpn-backend-develop_smtp', 'rpn-backend-develop_jobs', 'rpn-backend-develop_cron', 'rpn-backend-develop_mongo', 'rpn-backend-develop_echo-server', 'rpn-backend-develop_frontend', 'portainer_agent', 'rpn-backend-develop_clickhouse', 'rpn-backend-develop_pgbouncer', 'rpn-backend-develop_postgres', 'rpn-backend-develop_document-converter', 'rpn-backend-develop_redis', 'portainer_portainer', 'rpn-backend-develop_backend-ro', 'rpn-backend-develop_backend', 'rpn-backend-develop_update', 'rpn-backend-develop_postgres-smev', 'rpn-backend-develop_monitoring-uonvos', 'rpn-backend-develop_gost_crypto'] 
+------------------------------
+вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})
+['node.role == manager']
+------------------------------
+networks:
+  ingress:
+    external: yes
+    name: "ingress"
+  portainer_agent_network:
+    external: yes
+    name: "portainer_agent_network"
+  rpn-backend-develop_internal:
+    external: yes
+    name: "rpn-backend-develop_internal"
+
 services:
-  portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r:
-    container_name: "portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r"
+
+  portainer_agent.iu2bnmvsg50ao1v4tidaygz0h.s8qedydfss3jdx9i8vm1h87dp:
+    container_name: "portainer_agent.iu2bnmvsg50ao1v4tidaygz0h.s8qedydfss3jdx9i8vm1h87dp"
+    deploy:
+      placement:
+        constraints:
+          - "node.platform.os == linux"
     entrypoint:
       - "./agent"
     environment:
       - "AGENT_CLUSTER_ADDR=tasks.agent"
       - "AGENT_PORT=9001"
       - "PATH=/app:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    hostname: "6fe2d5b73be9"
-    image: "portainer/agent:latest@sha256:f763a45e6033b67b142d8dd8c5a4c450a514df2ea2bc6bffce8d671abd2341b8"
+    hostname: "bd717a4d0f6b"
+    image: "portainer/agent:latest"
     ipc: "private"
     labels:
       com.docker.stack.namespace: "portainer"
-      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
-      com.docker.swarm.service.id: "gwd2huglp63a6zakh0qwfvaaz"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "gdqj7fu3f66fznw0mxuh13kur"
       com.docker.swarm.service.name: "portainer_agent"
       com.docker.swarm.task: ""
-      com.docker.swarm.task.id: "d44ilxm0s55sx81vyqcxz6k1r"
-      com.docker.swarm.task.name: "portainer_agent.yav5a6wcscpq4jglmmecj5n4x.d44ilxm0s55sx81vyqcxz6k1r"
+      com.docker.swarm.task.id: "s8qedydfss3jdx9i8vm1h87dp"
+      com.docker.swarm.task.name: "portainer_agent.iu2bnmvsg50ao1v4tidaygz0h.s8qedydfss3jdx9i8vm1h87dp"
       io.portainer.agent: "true"
     logging:
       driver: "json-file"
@@ -98,33 +961,52 @@ services:
     networks:
       - "portainer_agent_network"
     volumes:
-      - "/var/lib/docker/volumes:/var/lib/docker/volumes"
       - "/var/run/docker.sock:/var/run/docker.sock"
+      - "/var/lib/docker/volumes:/var/lib/docker/volumes"
     working_dir: "/app"
-  portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv:
+
+  portainer_portainer.1.q2v0uhlp3bwim1s95it00dq5z:
+
     command:
       - "-H"
       - "tcp://tasks.agent:9001"
       - "--tlsskipverify"
-    container_name: "portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv"
+
+    container_name: "portainer_portainer.1.q2v0uhlp3bwim1s95it00dq5z"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
     entrypoint:
       - "/portainer"
+
     environment:
       - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
     expose:
       - "8000/tcp"
       - "9000/tcp"
       - "9443/tcp"
-    hostname: "ceeedc8cba0c"
+
+    hostname: "387625faf50a"
+
     image: "portainer/portainer:latest@sha256:47b064434edf437badf7337e516e07f64477485c8ecc663ddabbe824b20c672d"
+
     ipc: "private"
+
     labels:
+
       com.docker.desktop.extension.api.version: ">= 0.2.2"
+
       com.docker.desktop.extension.icon: "https://portainer-io-assets.sfo2.cdn.digitaloceanspaces.com/logos/portainer.png"
+
       com.docker.extension.additional-urls: "[{\"title\":\"Website\",\"url\":\"https://www.portainer.io?utm_campaign=DockerCon&utm_source=DockerDesktop\"\
         },{\"title\":\"Documentation\",\"url\":\"https://docs.portainer.io\"},{\"\
         title\":\"Support\",\"url\":\"https://join.slack.com/t/portainer/shared_invite/zt-txh3ljab-52QHTyjCqbe5RibC2lcjKA\"\
         }]"
+
       com.docker.extension.detailed-description: "<p data-renderer-start-pos=\"226\"\
         >Portainer&rsquo;s Docker Desktop extension gives you access to all of Portainer&rsquo;s\
         \ rich management functionality within your docker desktop experience.</p><h2\
@@ -146,7 +1028,9 @@ services:
         \ href=\"http://portainer.io/take5?utm_campaign=DockerCon&amp;utm_source=Docker%20Desktop\"\
         \ title=\"http://portainer.io/take5?utm_campaign=DockerCon&amp;utm_source=Docker%20Desktop\"\
         \ data-renderer-mark=\"true\">get 5 free nodes.</a></p>"
+
       com.docker.extension.publisher-url: "https://www.portainer.io"
+
       com.docker.extension.screenshots: "[{\"alt\": \"screenshot one\", \"url\": \"\
         https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-1.png\"\
         },{\"alt\": \"screenshot two\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-2.png\"\
@@ -158,102 +1042,2119 @@ services:
         },{\"alt\": \"screenshot eight\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-8.png\"\
         },{\"alt\": \"screenshot nine\", \"url\": \"https://portainer-io-assets.sfo2.digitaloceanspaces.com/screenshots/docker-extension-9.png\"\
         }]"
+
       com.docker.stack.namespace: "portainer"
-      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
-      com.docker.swarm.service.id: "1tgixu0i1wsg5m5mp2wxtoce1"
+
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+
+      com.docker.swarm.service.id: "n68a0jit3d37bkqzmtd4llzwh"
+
       com.docker.swarm.service.name: "portainer_portainer"
+
       com.docker.swarm.task: ""
-      com.docker.swarm.task.id: "06rx1zfkby0kcp65ocw0heycv"
-      com.docker.swarm.task.name: "portainer_portainer.1.06rx1zfkby0kcp65ocw0heycv"
+
+      com.docker.swarm.task.id: "q2v0uhlp3bwim1s95it00dq5z"
+
+      com.docker.swarm.task.name: "portainer_portainer.1.q2v0uhlp3bwim1s95it00dq5z"
+
       org.opencontainers.image.description: "Docker container management made simple,\
         \ with the world’s most popular GUI-based container management platform."
+
       org.opencontainers.image.title: "Portainer"
+
       org.opencontainers.image.vendor: "Portainer.io"
+
     logging:
       driver: "json-file"
       options: {}
+
     networks:
       - "ingress"
       - "portainer_agent_network"
+
     volumes:
       - "portainer_portainer_data:/data"
+
     working_dir: "/"
-  webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd:
+
+  rpn-backend-develop_backend-ro.1.ih7etorhze9id5f2014tb4pve:
+
     command:
-      - "nginx"
-      - "-g"
-      - "daemon off;"
-    container_name: "webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd"
+      - "web"
+
+    container_name: "rpn-backend-develop_backend-ro.1.ih7etorhze9id5f2014tb4pve"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
     entrypoint:
-      - "/docker-entrypoint.sh"
+      - "bash"
+      - "/app/entrypoint.sh"
+
     environment:
-      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      - "NGINX_VERSION=1.23.4"
-      - "NJS_VERSION=0.7.11"
-      - "PKG_RELEASE=1~bullseye"
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_NAME=RPN"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "READONLY_MODE=true"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/vendor/bin:/usr/local/share/composer/vendor/bin"
+
+      - "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\
+        \tmake \t\tpkg-config \t\tre2c"
+
+      - "PHP_INI_DIR=/usr/local/etc/php"
+
+      - "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE\
+        \ -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_LDFLAGS=-Wl,-O1 -pie"
+
+      - "GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544\
+        \ F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD"
+
+      - "PHP_VERSION=8.1.0"
+
+      - "PHP_URL=https://www.php.net/distributions/php-8.1.0.tar.xz"
+
+      - "PHP_ASC_URL=https://www.php.net/distributions/php-8.1.0.tar.xz.asc"
+
+      - "PHP_SHA256=a1317eff0723a2b3d3122bbfe107a1158570ea2822dc35a5fb360086db0f6bbc"
+
+      - "LC_ALL=C.UTF-8"
+
+      - "LANG=en_US.utf8"
+
     expose:
-      - "80/tcp"
-    hostname: "b28e96469c2d"
-    image: "nginx:latest@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94"
+      - "8080/tcp"
+      - "9000/tcp"
+
+    hostname: "backend-ro"
+
+    image: "registry.rpn.big3.ru/rpn/services/main:develop@sha256:d56bf1a76801210f4d246321bc7daf0023c058c36e75d758f3c744891ade1d12"
+
     ipc: "private"
+
     labels:
-      com.docker.stack.namespace: "webserver_test"
-      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
-      com.docker.swarm.service.id: "2glvo0b2p6n17w04da4p9lvcc"
-      com.docker.swarm.service.name: "webserver_test_webserver-worker"
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "ozpvthj2u3d8ojjs939hrwbav"
+      com.docker.swarm.service.name: "rpn-backend-develop_backend-ro"
       com.docker.swarm.task: ""
-      com.docker.swarm.task.id: "b0v84nn80wyhlns84fzfgubbd"
-      com.docker.swarm.task.name: "webserver_test_webserver-worker.1.b0v84nn80wyhlns84fzfgubbd"
-      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+      com.docker.swarm.task.id: "ih7etorhze9id5f2014tb4pve"
+      com.docker.swarm.task.name: "rpn-backend-develop_backend-ro.1.ih7etorhze9id5f2014tb4pve"
+
     logging:
       driver: "json-file"
       options: {}
+
     networks:
+      - "rpn-backend-develop_internal"
       - "ingress"
-      - "webserver_test_default"
-  webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1:
+
+    user: "app"
+
+    volumes:
+      - "rpn-backend-develop_cache:/cache"
+      - "/home/peter1/big3/main/app:/app"
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+      - "/home:/home"
+      - "/tmp:/tmp"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_backend.1.87ftfhdcwxphj3chi3oht4uxl:
+
     command:
-      - "nginx"
-      - "-g"
-      - "daemon off;"
-    container_name: "webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1"
+      - "web"
+
+    container_name: "rpn-backend-develop_backend.1.87ftfhdcwxphj3chi3oht4uxl"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
     entrypoint:
-      - "/docker-entrypoint.sh"
+      - "bash"
+      - "/app/entrypoint.sh"
+
     environment:
-      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-      - "NGINX_VERSION=1.23.4"
-      - "NJS_VERSION=0.7.11"
-      - "PKG_RELEASE=1~bullseye"
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_LOCAL=true"
+
+      - "APP_NAME=RPN"
+
+      - "APP_REFRESH=true"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/vendor/bin:/usr/local/share/composer/vendor/bin"
+
+      - "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\
+        \tmake \t\tpkg-config \t\tre2c"
+
+      - "PHP_INI_DIR=/usr/local/etc/php"
+
+      - "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE\
+        \ -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_LDFLAGS=-Wl,-O1 -pie"
+
+      - "GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544\
+        \ F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD"
+
+      - "PHP_VERSION=8.1.0"
+
+      - "PHP_URL=https://www.php.net/distributions/php-8.1.0.tar.xz"
+
+      - "PHP_ASC_URL=https://www.php.net/distributions/php-8.1.0.tar.xz.asc"
+
+      - "PHP_SHA256=a1317eff0723a2b3d3122bbfe107a1158570ea2822dc35a5fb360086db0f6bbc"
+
+      - "LC_ALL=C.UTF-8"
+
+      - "LANG=en_US.utf8"
+
     expose:
-      - "80/tcp"
-    hostname: "6a8c7d47aef0"
-    image: "nginx:latest@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94"
+      - "8080/tcp"
+      - "9000/tcp"
+
+    hostname: "backend"
+
+    image: "registry.rpn.big3.ru/rpn/services/main:develop@sha256:d56bf1a76801210f4d246321bc7daf0023c058c36e75d758f3c744891ade1d12"
+
     ipc: "private"
+
     labels:
-      com.docker.stack.namespace: "webserver_test"
-      com.docker.swarm.node.id: "yav5a6wcscpq4jglmmecj5n4x"
-      com.docker.swarm.service.id: "2glvo0b2p6n17w04da4p9lvcc"
-      com.docker.swarm.service.name: "webserver_test_webserver-worker"
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "pss9h1fhlru8k04gyx1eai09e"
+      com.docker.swarm.service.name: "rpn-backend-develop_backend"
       com.docker.swarm.task: ""
-      com.docker.swarm.task.id: "zpp7vl0e1jjstu5zzheise8q1"
-      com.docker.swarm.task.name: "webserver_test_webserver-worker.1.zpp7vl0e1jjstu5zzheise8q1"
-      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+      com.docker.swarm.task.id: "87ftfhdcwxphj3chi3oht4uxl"
+      com.docker.swarm.task.name: "rpn-backend-develop_backend.1.87ftfhdcwxphj3chi3oht4uxl"
+
     logging:
       driver: "json-file"
       options: {}
+
     networks:
+      - "rpn-backend-develop_internal"
       - "ingress"
-      - "webserver_test_default"
-networks:
-  ingress:
-    external: true
-    name: "ingress"
-  portainer_agent_network:
-    external: true
-    name: "portainer_agent_network"
-  webserver_test_default:
-    external: true
-    name: "webserver_test_default"
+
+    user: "app"
+
+    volumes:
+      - "/home/peter1/big3/main/app:/app"
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+      - "/home:/home"
+      - "/tmp:/tmp"
+      - "rpn-backend-develop_cache:/cache"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_clickhouse.1.dzmuufrxp6to0ycv1rbo78bh3:
+
+    container_name: "rpn-backend-develop_clickhouse.1.dzmuufrxp6to0ycv1rbo78bh3"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "/entrypoint.sh"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=en_US.UTF-8"
+      - "LANGUAGE=en_US:en"
+      - "LC_ALL=en_US.UTF-8"
+      - "TZ=UTC"
+      - "CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml"
+
+    expose:
+      - "8123/tcp"
+      - "9000/tcp"
+      - "9009/tcp"
+
+    hostname: "clickhouse"
+
+    image: "yandex/clickhouse-server:21.7.8.58-alpine@sha256:cb4b45073ed95e87cf30fc9892945a96e0fe7151735f2691612b060295459d72"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "h8j8ue4mmc92v5ngit32hyhz4"
+      com.docker.swarm.service.name: "rpn-backend-develop_clickhouse"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "dzmuufrxp6to0ycv1rbo78bh3"
+      com.docker.swarm.task.name: "rpn-backend-develop_clickhouse.1.dzmuufrxp6to0ycv1rbo78bh3"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    volumes:
+      - "rpn-backend-develop_clickhouse:/var/lib/clickhouse"
+      - "227fa652c8a2902bc2f5ec46a2fd1db8e244510e0080c744ab4fceb0f92b1ce6:/var/log/clickhouse-server"
+
+  rpn-backend-develop_cron.1.zuduedn4y41s40tx1lpzgsrh4:
+
+    command:
+      - "cron"
+
+    container_name: "rpn-backend-develop_cron.1.zuduedn4y41s40tx1lpzgsrh4"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "bash"
+      - "/app/entrypoint.sh"
+
+    environment:
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_LOCAL=true"
+
+      - "APP_NAME=RPN"
+
+      - "APP_REFRESH=true"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/vendor/bin:/usr/local/share/composer/vendor/bin"
+
+      - "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\
+        \tmake \t\tpkg-config \t\tre2c"
+
+      - "PHP_INI_DIR=/usr/local/etc/php"
+
+      - "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE\
+        \ -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_LDFLAGS=-Wl,-O1 -pie"
+
+      - "GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544\
+        \ F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD"
+
+      - "PHP_VERSION=8.1.0"
+
+      - "PHP_URL=https://www.php.net/distributions/php-8.1.0.tar.xz"
+
+      - "PHP_ASC_URL=https://www.php.net/distributions/php-8.1.0.tar.xz.asc"
+
+      - "PHP_SHA256=a1317eff0723a2b3d3122bbfe107a1158570ea2822dc35a5fb360086db0f6bbc"
+
+      - "LC_ALL=C.UTF-8"
+
+      - "LANG=en_US.utf8"
+
+    expose:
+      - "8080/tcp"
+      - "9000/tcp"
+
+    hostname: "cron"
+
+    image: "registry.rpn.big3.ru/rpn/services/main:develop@sha256:d56bf1a76801210f4d246321bc7daf0023c058c36e75d758f3c744891ade1d12"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "chd7uh460n0tlp6hfau3bmrn9"
+      com.docker.swarm.service.name: "rpn-backend-develop_cron"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "zuduedn4y41s40tx1lpzgsrh4"
+      com.docker.swarm.task.name: "rpn-backend-develop_cron.1.zuduedn4y41s40tx1lpzgsrh4"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    user: "app"
+
+    volumes:
+      - "rpn-backend-develop_cache:/cache"
+      - "/home/peter1/big3/main/app:/app"
+      - "/home/peter1/big3/main/app/bootstrap/cache:/app/bootstrap/cache"
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+      - "/home:/home"
+      - "/tmp:/tmp"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_document-converter.1.3xdw9l5a1yzlwm25a8v2vg3zm:
+
+    command:
+      - "bash"
+      - "/app/entrypoint.sh"
+
+    container_name: "rpn-backend-develop_document-converter.1.3xdw9l5a1yzlwm25a8v2vg3zm"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "bash"
+      - "/app/entrypoint.sh"
+
+    environment:
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/vendor/bin:/usr/local/share/composer/vendor/bin:/opt/libreoffice6.2/program"
+      - "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\
+        \tmake \t\tpkg-config \t\tre2c"
+      - "PHP_INI_DIR=/usr/local/etc/php"
+      - "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+      - "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE\
+        \ -D_FILE_OFFSET_BITS=64"
+      - "PHP_LDFLAGS=-Wl,-O1 -pie"
+      - "GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544\
+        \ F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD"
+      - "PHP_VERSION=8.1.0"
+      - "PHP_URL=https://www.php.net/distributions/php-8.1.0.tar.xz"
+      - "PHP_ASC_URL=https://www.php.net/distributions/php-8.1.0.tar.xz.asc"
+      - "PHP_SHA256=a1317eff0723a2b3d3122bbfe107a1158570ea2822dc35a5fb360086db0f6bbc"
+      - "LC_ALL=C.UTF-8"
+      - "LANG=en_US.utf8"
+
+    expose:
+      - "8080/tcp"
+      - "9000/tcp"
+
+    hostname: "document-converter"
+
+    image: "registry.rpn.big3.ru/rpn/services/document-converter:master@sha256:2bc85287c461c2390f38fb16b9d7461c99557f9f3a81f20ce25832456423f53e"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "maf723o8fgpbdh074ssz5jrze"
+      com.docker.swarm.service.name: "rpn-backend-develop_document-converter"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "3xdw9l5a1yzlwm25a8v2vg3zm"
+      com.docker.swarm.task.name: "rpn-backend-develop_document-converter.1.3xdw9l5a1yzlwm25a8v2vg3zm"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+      - "ingress"
+
+    user: "app"
+
+    volumes:
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_echo-server.1.c4d0gj0njirs0psunaxmndvkb:
+
+    container_name: "rpn-backend-develop_echo-server.1.c4d0gj0njirs0psunaxmndvkb"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "laravel-echo-server"
+      - "start"
+      - "--config=echo-server.json"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LARAVEL_ECHO_SERVER_AUTH_HOST=http://frontend"
+      - "LARAVEL_ECHO_SERVER_DEBUG=true"
+      - "LARAVEL_ECHO_SERVER_REDIS_HOST=redis"
+      - "LARAVEL_ECHO_SERVER_REDIS_PORT=6379"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "NODE_VERSION=13.2.0"
+      - "YARN_VERSION=1.19.1"
+
+    hostname: "echo-server"
+
+    image: "registry.rpn.big3.ru/rpn/services/echo-server:master@sha256:d580cb7c20e747a8af1046a70065767c6a083f2ceca964d403b91e16f7034ad1"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "dlz7dkwe4rr2hfre6u1x7bjlk"
+      com.docker.swarm.service.name: "rpn-backend-develop_echo-server"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "c4d0gj0njirs0psunaxmndvkb"
+      com.docker.swarm.task.name: "rpn-backend-develop_echo-server.1.c4d0gj0njirs0psunaxmndvkb"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+      - "ingress"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_frontend.1.7ay5tjyff548bzhkp4vwsud24:
+
+    command:
+      - "./entrypoint-frontend.sh"
+
+    container_name: "rpn-backend-develop_frontend.1.7ay5tjyff548bzhkp4vwsud24"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "/docker-entrypoint.sh"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BACKEND=http://backend:8080"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "NGINX_VERSION=1.21.3"
+      - "NJS_VERSION=0.6.2"
+      - "PKG_RELEASE=1~buster"
+
+    hostname: "frontend"
+
+    image: "registry.rpn.big3.ru/rpn/services/frontend-bootstrap:develop@sha256:145aa76caa2b7ec97dd45650342bddf672b9836ac182b952aefe4b59e6ef5f43"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "g7dyuu2lghd9o72zpkmx0lb30"
+      com.docker.swarm.service.name: "rpn-backend-develop_frontend"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "7ay5tjyff548bzhkp4vwsud24"
+      com.docker.swarm.task.name: "rpn-backend-develop_frontend.1.7ay5tjyff548bzhkp4vwsud24"
+      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+      traefik.backend.loadbalancer.sticky: "true"
+      traefik.docker.network: "web"
+      traefik.frontend.entryPoints: "http,https"
+      traefik.frontend.rule: "Host:develop.rpn.big3.ru,"
+      traefik.port: "80"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    ports:
+      - "80:80/tcp"
+
+    volumes:
+      - "/home/peter1/big3/main/app/storage:/app/storage:ro"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_frontend.1.g0885k0syhfqmu4dycne3s1qk:
+
+    command:
+      - "./entrypoint-frontend.sh"
+
+    container_name: "rpn-backend-develop_frontend.1.g0885k0syhfqmu4dycne3s1qk"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "/docker-entrypoint.sh"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BACKEND=http://backend:8080"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "NGINX_VERSION=1.21.3"
+      - "NJS_VERSION=0.6.2"
+      - "PKG_RELEASE=1~buster"
+
+    hostname: "frontend"
+
+    image: "registry.rpn.big3.ru/rpn/services/frontend-bootstrap:develop@sha256:145aa76caa2b7ec97dd45650342bddf672b9836ac182b952aefe4b59e6ef5f43"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "g7dyuu2lghd9o72zpkmx0lb30"
+      com.docker.swarm.service.name: "rpn-backend-develop_frontend"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "g0885k0syhfqmu4dycne3s1qk"
+      com.docker.swarm.task.name: "rpn-backend-develop_frontend.1.g0885k0syhfqmu4dycne3s1qk"
+      maintainer: "NGINX Docker Maintainers <docker-maint@nginx.com>"
+      traefik.backend.loadbalancer.sticky: "true"
+      traefik.docker.network: "web"
+      traefik.frontend.entryPoints: "http,https"
+      traefik.frontend.rule: "Host:develop.rpn.big3.ru,"
+      traefik.port: "80"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    ports:
+      - "80:80/tcp"
+
+    volumes:
+      - "/home/peter1/big3/main/app/storage:/app/storage:ro"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_gost_crypto.1.zmbuf2gsroav9qzcqylk35oz1:
+
+    command:
+      - "/app/server"
+
+    container_name: "rpn-backend-develop_gost_crypto.1.zmbuf2gsroav9qzcqylk35oz1"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "/app/server"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "CRYPTOPRO_SERIAL_NUMBER=5050L-10000-01MVR-L9C5D-02CQ2"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "LANG=en_US.utf8"
+      - "BIND_HOST=0.0.0.0"
+      - "BIND_PORT=8090"
+
+    expose:
+      - "8090/tcp"
+
+    hostname: "1a5c87e1038e"
+
+    image: "registry.rpn.big3.ru/rpn/services/v3/gost-crypto:master@sha256:d26bbc2e78880ea003c35ee00150bbc43737258cb8e8ed13b9fd0dbebeb4919b"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "vy5yt5xqs2bnmt23m3e618gow"
+      com.docker.swarm.service.name: "rpn-backend-develop_gost_crypto"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "zmbuf2gsroav9qzcqylk35oz1"
+      com.docker.swarm.task.name: "rpn-backend-develop_gost_crypto.1.zmbuf2gsroav9qzcqylk35oz1"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    user: "app"
+
+    volumes:
+      - "rpn-backend-develop_gost_temp:/tmp"
+      - "rpn-backend-develop_gost_env:/app/.env"
+      - "rpn-backend-develop_gost_keys:/var/opt/cprocsp/keys/app"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_jobs.1.u7x141vsh3p13n3i7bbc905gk:
+
+    command:
+      - "jobs"
+
+    container_name: "rpn-backend-develop_jobs.1.u7x141vsh3p13n3i7bbc905gk"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "bash"
+      - "/app/entrypoint.sh"
+
+    environment:
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_LOCAL=true"
+
+      - "APP_NAME=RPN"
+
+      - "APP_REFRESH=true"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/vendor/bin:/usr/local/share/composer/vendor/bin"
+
+      - "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\
+        \tmake \t\tpkg-config \t\tre2c"
+
+      - "PHP_INI_DIR=/usr/local/etc/php"
+
+      - "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE\
+        \ -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_LDFLAGS=-Wl,-O1 -pie"
+
+      - "GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544\
+        \ F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD"
+
+      - "PHP_VERSION=8.1.0"
+
+      - "PHP_URL=https://www.php.net/distributions/php-8.1.0.tar.xz"
+
+      - "PHP_ASC_URL=https://www.php.net/distributions/php-8.1.0.tar.xz.asc"
+
+      - "PHP_SHA256=a1317eff0723a2b3d3122bbfe107a1158570ea2822dc35a5fb360086db0f6bbc"
+
+      - "LC_ALL=C.UTF-8"
+
+      - "LANG=en_US.utf8"
+
+    expose:
+      - "8080/tcp"
+      - "9000/tcp"
+
+    hostname: "jobs"
+
+    image: "registry.rpn.big3.ru/rpn/services/main:develop@sha256:d56bf1a76801210f4d246321bc7daf0023c058c36e75d758f3c744891ade1d12"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "ak4chsj52gnvdqcdfma7rvnne"
+      com.docker.swarm.service.name: "rpn-backend-develop_jobs"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "u7x141vsh3p13n3i7bbc905gk"
+      com.docker.swarm.task.name: "rpn-backend-develop_jobs.1.u7x141vsh3p13n3i7bbc905gk"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    user: "app"
+
+    volumes:
+      - "rpn-backend-develop_cache:/cache"
+      - "/home/peter1/big3/main/app:/app"
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+      - "/home:/home"
+      - "/tmp:/tmp"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_mongo.1.9ft3u6i79xzozokpht3dl9c68:
+
+    command:
+      - "mongod"
+
+    container_name: "rpn-backend-develop_mongo.1.9ft3u6i79xzozokpht3dl9c68"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "docker-entrypoint.sh"
+
+    environment:
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_NAME=RPN"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "MONGO_INITDB_DATABASE=app"
+
+      - "MONGO_INITDB_ROOT_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "MONGO_INITDB_ROOT_USERNAME=app"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+      - "GOSU_VERSION=1.16"
+
+      - "JSYAML_VERSION=3.13.1"
+
+      - "MONGO_PACKAGE=mongodb-org"
+
+      - "MONGO_REPO=repo.mongodb.org"
+
+      - "MONGO_MAJOR=4.2"
+
+      - "MONGO_VERSION=4.2.24"
+
+      - "HOME=/data/db"
+
+    expose:
+      - "27017/tcp"
+
+    hostname: "mongo"
+
+    image: "mongo:4.2-bionic@sha256:26810f6f087004d30e49bd141025854dac308645dd95dc9eac5b837b11874a82"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "d4m9zq6edhmn8bh5osk43024u"
+      com.docker.swarm.service.name: "rpn-backend-develop_mongo"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "9ft3u6i79xzozokpht3dl9c68"
+      com.docker.swarm.task.name: "rpn-backend-develop_mongo.1.9ft3u6i79xzozokpht3dl9c68"
+      org.opencontainers.image.ref.name: "ubuntu"
+      org.opencontainers.image.version: "18.04"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+      - "ingress"
+
+    volumes:
+      - "dcb999c705668e6f0ceff2ccfcdafb7c8824c6c183f3cbe211a9ba17306e1ebb:/data/configdb"
+      - "rpn-backend-develop_mongo:/data/db"
+
+  rpn-backend-develop_monitoring-uonvos.1.fb66h7xqgko5sghzgi9mg654p:
+
+    command:
+      - "monitoring-uonvos"
+
+    container_name: "rpn-backend-develop_monitoring-uonvos.1.fb66h7xqgko5sghzgi9mg654p"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "bash"
+      - "/app/entrypoint.sh"
+
+    environment:
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_LOCAL=true"
+
+      - "APP_NAME=RPN"
+
+      - "APP_REFRESH=true"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/app/vendor/bin:/usr/local/share/composer/vendor/bin"
+
+      - "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\
+        \tmake \t\tpkg-config \t\tre2c"
+
+      - "PHP_INI_DIR=/usr/local/etc/php"
+
+      - "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE\
+        \ -D_FILE_OFFSET_BITS=64"
+
+      - "PHP_LDFLAGS=-Wl,-O1 -pie"
+
+      - "GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544\
+        \ F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD"
+
+      - "PHP_VERSION=8.1.0"
+
+      - "PHP_URL=https://www.php.net/distributions/php-8.1.0.tar.xz"
+
+      - "PHP_ASC_URL=https://www.php.net/distributions/php-8.1.0.tar.xz.asc"
+
+      - "PHP_SHA256=a1317eff0723a2b3d3122bbfe107a1158570ea2822dc35a5fb360086db0f6bbc"
+
+      - "LC_ALL=C.UTF-8"
+
+      - "LANG=en_US.utf8"
+
+    expose:
+      - "8080/tcp"
+      - "9000/tcp"
+
+    hostname: "monitoring-uonvos"
+
+    image: "registry.rpn.big3.ru/rpn/services/main:develop@sha256:d56bf1a76801210f4d246321bc7daf0023c058c36e75d758f3c744891ade1d12"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "vljuoo3o9ail62zvfcsiwyr6p"
+      com.docker.swarm.service.name: "rpn-backend-develop_monitoring-uonvos"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "fb66h7xqgko5sghzgi9mg654p"
+      com.docker.swarm.task.name: "rpn-backend-develop_monitoring-uonvos.1.fb66h7xqgko5sghzgi9mg654p"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+      - "ingress"
+
+    user: "app"
+
+    volumes:
+      - "/home:/home"
+      - "/tmp:/tmp"
+      - "rpn-backend-develop_cache:/cache"
+      - "/home/peter1/big3/main/app:/app"
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+
+    working_dir: "/app"
+
+  rpn-backend-develop_pgbouncer.1.jbc1cujwu9vndrggrka1ih1ht:
+
+    command:
+      - "/usr/bin/pgbouncer"
+      - "/etc/pgbouncer/pgbouncer.ini"
+
+    container_name: "rpn-backend-develop_pgbouncer.1.jbc1cujwu9vndrggrka1ih1ht"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "/entrypoint.sh"
+
+    environment:
+
+      - "ADMIN_USERS=app"
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_NAME=RPN"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_NAME=app"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USER=app"
+
+      - "DB_USERNAME=app"
+
+      - "DEFAULT_POOL_SIZE=500"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LISTEN_PORT=5432"
+
+      - "LOG_CHANNEL=stack"
+
+      - "MAX_CLIENT_CONN=2000"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "PG_HOST_MASTER=postgres"
+
+      - "POOL_MODE=session"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+    expose:
+      - "5432/tcp"
+
+    hostname: "pgbouncer"
+
+    image: "registry.rpn.big3.ru/pgbouncer:latest@sha256:81a87a1fb6789363493d560f4b22e33b3f7f97a31d857d4054172f06fe769ce1"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "hjktgu18wy6gt5maalxd8kj9m"
+      com.docker.swarm.service.name: "rpn-backend-develop_pgbouncer"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "jbc1cujwu9vndrggrka1ih1ht"
+      com.docker.swarm.task.name: "rpn-backend-develop_pgbouncer.1.jbc1cujwu9vndrggrka1ih1ht"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    user: "postgres"
+
+    working_dir: "/etc/pgbouncer"
+
+  rpn-backend-develop_postgres-smev.1.snkfi5s2a8kmr1p5849x6yafp:
+
+    command:
+      - "postgres"
+
+    container_name: "rpn-backend-develop_postgres-smev.1.snkfi5s2a8kmr1p5849x6yafp"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "docker-entrypoint.sh"
+
+    environment:
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_NAME=RPN"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "POSTGRES_DB=app"
+
+      - "POSTGRES_HOST=postgres"
+
+      - "POSTGRES_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "POSTGRES_PORT=5432"
+
+      - "POSTGRES_USER=app"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "REPLICATION_PASSWORD=r9pl1cAt10n"
+
+      - "REPLICATION_USER=replication"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin"
+
+      - "GOSU_VERSION=1.12"
+
+      - "LANG=en_US.utf8"
+
+      - "PG_MAJOR=11"
+
+      - "PG_VERSION=11.10-1.pgdg90+1"
+
+      - "PGDATA=/var/lib/postgresql/data"
+
+      - "POSTGIS_MAJOR=3"
+
+      - "POSTGIS_VERSION=3.0.1+dfsg-2.pgdg90+1"
+
+      - "SHARED_BUFFERS=512MB"
+
+      - "MAX_CONNECTIONS=500"
+
+      - "WAL_KEEP_SEGMENTS=256"
+
+      - "MAX_WAL_SENDERS=100"
+
+      - "MAX_PARALLEL_WORKERS=8"
+
+      - "MAX_WORKER_PROCESSES=8"
+
+      - "REPLICATION_ROLE=master"
+
+      - "POSTGRES_MASTER_SERVICE_HOST=postgres"
+
+      - "POSTGRES_MASTER_SERVICE_PORT=5432"
+
+      - "POSTGIS_SCRIPTS_VERSION=3.0.1+dfsg-2.pgdg90+1"
+
+      - "USE_PGXS=1"
+
+    expose:
+      - "5432/tcp"
+
+    hostname: "postgres-smev"
+
+    image: "registry.rpn.big3.ru/rpn/postgis-clustering-replicated:latest@sha256:6b17dc11671860d326e11b75f98cdcda8dd58c45819f91a365d99d57afc3c5bc"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "uazvst7mucga0wdysgh2wco9n"
+      com.docker.swarm.service.name: "rpn-backend-develop_postgres-smev"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "snkfi5s2a8kmr1p5849x6yafp"
+      com.docker.swarm.task.name: "rpn-backend-develop_postgres-smev.1.snkfi5s2a8kmr1p5849x6yafp"
+      maintainer: "PostGIS Project - https://postgis.net"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+      - "ingress"
+
+    volumes:
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+      - "rpn-backend-develop_postgres_smev:/var/lib/postgresql/data"
+      - "0d6b1ca1d50bb4645b96f547309c3f0e18a0054c72d3c72ee3f1b706b7de2673:/backup"
+
+  rpn-backend-develop_postgres.1.ic8cpt122ufpad61ng0vn8dbw:
+
+    command:
+      - "postgres"
+
+    container_name: "rpn-backend-develop_postgres.1.ic8cpt122ufpad61ng0vn8dbw"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "docker-entrypoint.sh"
+
+    environment:
+
+      - "APP_DEBUG=true"
+
+      - "APP_ENV=local"
+
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+
+      - "APP_NAME=RPN"
+
+      - "BROADCAST_DRIVER=redis"
+
+      - "CACHE_DRIVER=redis"
+
+      - "DB_CONNECTION=pgsql"
+
+      - "DB_DATABASE=app"
+
+      - "DB_HOST=postgres"
+
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "DB_PORT=5432"
+
+      - "DB_USERNAME=app"
+
+      - "ECHO_SERVER=http://echo-server:6001"
+
+      - "LOG_CHANNEL=stack"
+
+      - "METRICS_TOKEN=very_secret_token"
+
+      - "POSTGRES_DB=app"
+
+      - "POSTGRES_HOST=postgres"
+
+      - "POSTGRES_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "POSTGRES_PORT=5432"
+
+      - "POSTGRES_USER=app"
+
+      - "QUEUE_CONNECTION=redis"
+
+      - "REDIS_HOST=redis"
+
+      - "REDIS_PASSWORD=null"
+
+      - "REDIS_PORT=6379"
+
+      - "REPLICATION_PASSWORD=r9pl1cAt10n"
+
+      - "REPLICATION_USER=replication"
+
+      - "SESSION_DRIVER=redis"
+
+      - "SESSION_LIFETIME=120"
+
+      - "SMEV3_DB_DATABASE=app"
+
+      - "SMEV3_DB_HOST=postgres"
+
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+
+      - "SMEV3_DB_PORT=5432"
+
+      - "SMEV3_DB_USERNAME=app"
+
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+
+      - "SMEV3_S3_ACCESS_KEY="
+
+      - "SMEV3_S3_BUCKET_CREATIO="
+
+      - "SMEV3_S3_BUCKET_RO="
+
+      - "SMEV3_S3_ENDPOINT="
+
+      - "SMEV3_S3_REGION="
+
+      - "SMEV3_S3_SECRET_KEY="
+
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/postgresql/11/bin"
+
+      - "GOSU_VERSION=1.12"
+
+      - "LANG=en_US.utf8"
+
+      - "PG_MAJOR=11"
+
+      - "PG_VERSION=11.10-1.pgdg90+1"
+
+      - "PGDATA=/var/lib/postgresql/data"
+
+      - "POSTGIS_MAJOR=3"
+
+      - "POSTGIS_VERSION=3.0.1+dfsg-2.pgdg90+1"
+
+      - "SHARED_BUFFERS=512MB"
+
+      - "MAX_CONNECTIONS=500"
+
+      - "WAL_KEEP_SEGMENTS=256"
+
+      - "MAX_WAL_SENDERS=100"
+
+      - "MAX_PARALLEL_WORKERS=8"
+
+      - "MAX_WORKER_PROCESSES=8"
+
+      - "REPLICATION_ROLE=master"
+
+      - "POSTGRES_MASTER_SERVICE_HOST=postgres"
+
+      - "POSTGRES_MASTER_SERVICE_PORT=5432"
+
+      - "POSTGIS_SCRIPTS_VERSION=3.0.1+dfsg-2.pgdg90+1"
+
+      - "USE_PGXS=1"
+
+    expose:
+      - "5432/tcp"
+
+    hostname: "postgres"
+
+    image: "registry.rpn.big3.ru/rpn/postgis-clustering-replicated:latest@sha256:6b17dc11671860d326e11b75f98cdcda8dd58c45819f91a365d99d57afc3c5bc"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "ik3ft08j6of2k0vshzvvw3vio"
+      com.docker.swarm.service.name: "rpn-backend-develop_postgres"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "ic8cpt122ufpad61ng0vn8dbw"
+      com.docker.swarm.task.name: "rpn-backend-develop_postgres.1.ic8cpt122ufpad61ng0vn8dbw"
+      maintainer: "PostGIS Project - https://postgis.net"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+      - "ingress"
+
+    volumes:
+      - "rpn-backend-develop_postgres:/var/lib/postgresql/data"
+      - "e78da46a1c9d9cbbd430ee05421565a80e2ccff6bd2465dc310759986a066982:/backup"
+      - "/home/peter1/big3/main/app/storage:/app/storage"
+
+  rpn-backend-develop_redis.1.beul55us0a8lyh7zvmf89vvpq:
+
+    command:
+      - "keydb-server"
+      - "/etc/keydb/keydb.conf"
+
+    container_name: "rpn-backend-develop_redis.1.beul55us0a8lyh7zvmf89vvpq"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "docker-entrypoint.sh"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - "GOSU_VERSION=1.10"
+      - "KEYDB_PRO_DIRECTORY=/usr/local/bin/"
+
+    expose:
+      - "6379/tcp"
+
+    hostname: "redis"
+
+    image: "eqalpha/keydb:x86_64_v5.3.0@sha256:2061fccc80dc863e4627659822ccf27d2dd85729b92d4aeb546cf80c41468c89"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "mtwvqoh4ohft53z52pfen7olp"
+      com.docker.swarm.service.name: "rpn-backend-develop_redis"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "beul55us0a8lyh7zvmf89vvpq"
+      com.docker.swarm.task.name: "rpn-backend-develop_redis.1.beul55us0a8lyh7zvmf89vvpq"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    volumes:
+      - "rpn-backend-develop_redis:/data"
+
+    working_dir: "/data"
+
+  rpn-backend-develop_smtp.1.4jqnmnw0hzmao09how12dxp2r:
+
+    command:
+      - "exim"
+      - "-bd"
+      - "-v"
+
+    container_name: "rpn-backend-develop_smtp.1.4jqnmnw0hzmao09how12dxp2r"
+
+    deploy:
+      placement:
+        constraints:
+          - "node.role == manager"
+
+    entrypoint:
+      - "docker-entrypoint.sh"
+
+    environment:
+      - "APP_DEBUG=true"
+      - "APP_ENV=local"
+      - "APP_KEY=base64:rLs3QGZuB2KSt9KlobU0fqKLSObIyKYUEULjwhfzeH4="
+      - "APP_NAME=RPN"
+      - "BROADCAST_DRIVER=redis"
+      - "CACHE_DRIVER=redis"
+      - "DB_CONNECTION=pgsql"
+      - "DB_DATABASE=app"
+      - "DB_HOST=postgres"
+      - "DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "DB_PORT=5432"
+      - "DB_USERNAME=app"
+      - "ECHO_SERVER=http://echo-server:6001"
+      - "LOG_CHANNEL=stack"
+      - "METRICS_TOKEN=very_secret_token"
+      - "QUEUE_CONNECTION=redis"
+      - "REDIS_HOST=redis"
+      - "REDIS_PASSWORD=null"
+      - "REDIS_PORT=6379"
+      - "SESSION_DRIVER=redis"
+      - "SESSION_LIFETIME=120"
+      - "SMEV3_DB_DATABASE=app"
+      - "SMEV3_DB_HOST=postgres"
+      - "SMEV3_DB_PASSWORD=Da1abAzET0pSEcPetPasSw0Rd"
+      - "SMEV3_DB_PORT=5432"
+      - "SMEV3_DB_USERNAME=app"
+      - "SMEV3_INCOMING_ATTACHMENTS_URL="
+      - "SMEV3_S3_ACCESS_KEY="
+      - "SMEV3_S3_BUCKET_CREATIO="
+      - "SMEV3_S3_BUCKET_RO="
+      - "SMEV3_S3_ENDPOINT="
+      - "SMEV3_S3_REGION="
+      - "SMEV3_S3_SECRET_KEY="
+      - "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+    expose:
+      - "25/tcp"
+
+    hostname: "smtp"
+
+    image: "tianon/exim4:latest@sha256:97972c7caadf91f357ea30ddefa30266d4504104fafbf06a55dfe6dc35908440"
+
+    ipc: "private"
+
+    labels:
+      com.docker.stack.namespace: "rpn-backend-develop"
+      com.docker.swarm.node.id: "iu2bnmvsg50ao1v4tidaygz0h"
+      com.docker.swarm.service.id: "0lt5gop7c9x9uw6ipc1jbkhwj"
+      com.docker.swarm.service.name: "rpn-backend-develop_smtp"
+      com.docker.swarm.task: ""
+      com.docker.swarm.task.id: "4jqnmnw0hzmao09how12dxp2r"
+      com.docker.swarm.task.name: "rpn-backend-develop_smtp.1.4jqnmnw0hzmao09how12dxp2r"
+
+    logging:
+      driver: "json-file"
+      options: {}
+
+    networks:
+      - "rpn-backend-develop_internal"
+
+    volumes:
+      - "8c17ce5bb4950d227decc7b85ea0feddf7f237b227d20b5052c701ce3767e4c7:/var/log/exim4"
+      - "3f0b3aa1e86397e0d125eabc78e04f21d650bebcec9239e8538412cd5e7255d8:/var/spool/exim4"
+
+version: "3.6"
+
 volumes:
+  0d6b1ca1d50bb4645b96f547309c3f0e18a0054c72d3c72ee3f1b706b7de2673:
+    external: yes
+  227fa652c8a2902bc2f5ec46a2fd1db8e244510e0080c744ab4fceb0f92b1ce6:
+    external: yes
+  3f0b3aa1e86397e0d125eabc78e04f21d650bebcec9239e8538412cd5e7255d8:
+    external: yes
+  8c17ce5bb4950d227decc7b85ea0feddf7f237b227d20b5052c701ce3767e4c7:
+    external: yes
+  dcb999c705668e6f0ceff2ccfcdafb7c8824c6c183f3cbe211a9ba17306e1ebb:
+    external: yes
+  e78da46a1c9d9cbbd430ee05421565a80e2ccff6bd2465dc310759986a066982:
+    external: yes
   portainer_portainer_data:
-    external: true
+    external: yes
+  rpn-backend-develop_cache:
+    external: yes
+  rpn-backend-develop_clickhouse:
+    external: yes
+  rpn-backend-develop_gost_env:
+    external: yes
+  rpn-backend-develop_gost_keys:
+    external: yes
+  rpn-backend-develop_gost_temp:
+    external: yes
+  rpn-backend-develop_mongo:
+    external: yes
+  rpn-backend-develop_postgres:
+    external: yes
+  rpn-backend-develop_postgres_smev:
+    external: yes
+  rpn-backend-develop_redis:
+    external: yes

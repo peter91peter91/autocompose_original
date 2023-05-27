@@ -140,20 +140,20 @@ def render(struct, args, networks, volumes):
 
 
 ##################################################################
-def placement_constraints_moiseev(container_name):   #лучше в будущем вызывать единожды
+def placement_constraints_moiseev(container_name):  # лучше в будущем вызывать единожды
     print("---------- передали в мою функцию container_name")
     print(container_name)
     # (container_name здесь это c.containers.get(cid).name)
     # Взяли короткое имя. Ищем его далее в массиве docker service ls (c.services.list())
-    short_container_name = container_name.partition('.')[0]  #отрезаем имя после точки и точку
+    short_container_name = container_name.partition('.')[0]  # отрезаем имя после точки и точку
 
     c = docker.from_env()
-    services_id_list = c.services.list()   #список всех айди сервисов
+    services_id_list = c.services.list()  # список всех айди сервисов
     print("---------- выводим services_id_list")
     print(services_id_list)
-    #удаляем в списке весь мусор кроме айдишников <Service: 0lt5gop7c9x9>
+    # удаляем в списке весь мусор кроме айдишников <Service: 0lt5gop7c9x9>
 
-    i=0
+    i = 0
     list_range = range(len(services_id_list))
     services_name_list = list(list_range)
     services_id_list_filtered = list(list_range)
@@ -165,9 +165,9 @@ def placement_constraints_moiseev(container_name):   #лучше в будуще
         services_id_and_name_list = [[services_id_list_filtered], [services_name_list]]
     ###выбираем айди, соответствующий нужному имени сервиса
     ###пока что метод в таком неоптимизированном виде для удобства отладки!!!
-    #short_container_name = "rpn-backend-develop_cron"
+    # short_container_name = "rpn-backend-develop_cron"
     target_service_id = ""
-    i=0
+    i = 0
 
     print("1)перед циклом")
     for i in list_range:
@@ -183,16 +183,18 @@ def placement_constraints_moiseev(container_name):   #лучше в будуще
     print("---------- выводим вне цикла target_service_id")
     print(target_service_id)
     ########################################################################
-    print("---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- ")
+    print(
+        "---------- выводим двумерный список     services_id_and_name_list = [[services_id_list], [services_name_list]]---------- ")
     for i in range(len(services_id_and_name_list)):
         for j in range(len(services_id_and_name_list[i])):
             print(services_id_and_name_list[i][j], end=' ')
         print()
-########################################################################
+    ########################################################################
     cattrs = c.services.get(target_service_id).attrs
     placement_constraints = cattrs.get("Spec", {}).get("TaskTemplate", {}).get("Placement", {}).get("Constraints", {})
     print("------------------------------")
-    print("вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})")  # !!! moiseev
+    print(
+        "вывод placement-constraints  spec и остальное в кавычках    cattrs.get(Spec, {}).get(TaskTemplate, {}).get(Placement, {}).get(Constraints, {})")  # !!! moiseev
     print(placement_constraints)
     print("------------------------------")
 
@@ -242,7 +244,6 @@ def generate(cname, createvolumes=False):
     ##################################################################
     ##################################################################
     ##################################################################
-    
 
     # Build yaml dict structure
 
@@ -285,7 +286,6 @@ def generate(cname, createvolumes=False):
             }
         },
         ###moiseev
-
 
         "security_opt": cattrs.get("HostConfig", {}).get("SecurityOpt"),
         "ulimits": cattrs.get("HostConfig", {}).get("Ulimits"),
